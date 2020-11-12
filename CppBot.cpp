@@ -1,24 +1,43 @@
+
 #include <iostream>;
 #include <Windows.h>;
-#include <stdlib.h>;
-#include <time.h>
+
+// Std
 using namespace std;
-int main(){
-	cout << "Creating variables";
-	string acx;
+
+// Main
+int main() 
+{
+
+	// Create variables
+	string cmd;
 	int coins = 0;
 	int paper = 1;
 	int rNum = 0;
 	int uNum = 0;
-	int a = NULL;
-	int b = NULL;
+	int a = 0;
+	int b = 0;
 	char letter = NULL;
 	char chars = NULL;
 	int numToSell = 0;
+	int numOne = 0;
+	int numTwo = 0;
+	string uPass;
+
+	// Clear
 	system("CLS");
-	while (0 == 0) {
-		cin >> acx;
-		if (acx == "help") {
+
+	// Main loop
+	while (0 == 0) 
+	{
+
+		// Get input
+		cin >> cmd;
+
+		// Start checking for commands 
+		if (cmd == "help") 
+		{
+			// Help
 			cout << "help - Displays this help message\n";
 			cout << "playCoins - Play for a chance to get coins!\n";
 			cout << "playPaper - Play for a chance to get paper!\n";
@@ -30,120 +49,228 @@ int main(){
 			cout << "cls - Clears all the text on the screen\n";
 			cout << "spam - Program spams\n";
 			cout << "exit - Exits this program\n";
+			cout << "add - Adds two numbers\n";
+			cout << "subtract - Sutracts two numbers\n";
+			cout << "multiply - Mu";
 		}
-		else if (acx == "playCoins") {
+		else if (cmd == "playCoins") 
+		{
+			// Coins
+			// Generate random number
 			int rNum = rand() % 9 + 1;
-			int uNum;
+
+			// Get user's random number
 			cout << "Guess the random number (1 to 10)\n";
 			cin >> uNum;
-			if (uNum == rNum) {
+
+			// Check if correct
+			if (uNum == rNum) 
+			{
+				// Correct
 				cout << "Correct!\n";
 				coins++;
 			}
-			else {
+			else 
+			{
+				// Incorrect
 				cout << "Incorrect!\n";
 			}
 		}
-		else if (acx == "playPaper") {
+		else if (cmd == "playPaper") 
+		{
+			// Generate random number from 1 to 100
 			int rNum = rand() % 100 + 1;
-			int wNum;
+
+			// Get user's random number
 			cout << "Guess the random number (1 to 100)\n";
-			cin >> wNum;
-			if (wNum == rNum) {
+			cin >> uNum;
+
+			// Check if correct
+			if (uNum == rNum) 
+			{
+				// Correct
 				cout << "Correct!\n";
 				paper++;
 			}
-			else {
+			else 
+			{
+				// Incorrect
 				cout << "Incorrect!\n";
 			}
 		}
-		else if (acx == "coins") {
+		else if (cmd == "coins") 
+		{
+			// Get coins
 			cout << "Coins: ";
 			cout << coins;
 			cout << "\n";
 		}
-		else if (acx == "paper") {
+		else if (cmd == "paper") 
+		{
+			// Get paper
 			cout << "Paper: ";
 			cout << paper;
 			cout << "\n";
 		}
-		else if (acx == "steal") {
+		else if (cmd == "steal") 
+		{
+			// No stealing allowed 
 			cout << "No.\n";
 		}
-		else if (acx == "sell") {
-			if (paper == 0) {
+		else if (cmd == "sell") 
+		{
+			// Sell paper
+			if (paper == 0) 
+			{
+				// No paper to sell
 				cout << "You don't even have paper to sell!\n";
 			}
-			else {
-				cout << "No.\n";
-				int numToSell;
+			else 
+			{
 				cout << "For every paper you sell, you get 10 coins\n";
 				cout << "How many papers do you want to sell?\n";
+
+				// Get num to sell
 				cin >> numToSell;
-				if (numToSell > paper) {
+
+				// Check
+				if (numToSell > paper) 
+				{
+					// Not enough paper
 					cout << "You don't have enough paper!\n";
 				}
-				else {
+				else 
+				{
+					// Sell
 					paper = paper - numToSell;
 					coins = coins + (numToSell * 10);
 				}
 			}
 		}
-		else if (acx == "NULL") {
+		else if (cmd == "NULL") 
+		{
+			// Null
 			cout << "No.\n";
 		}
-		else if (acx == "") {
+		else if (cmd.empty()) 
+		{
+			throw "Command is empty";
+			// Blank
 			cout << "";
 			continue;
 		}
-		else if (acx == "givemecoffee") {
-			cout << "Coffee out of stock!\n";
+		else if (cmd == "givemecoffee") 
+		{
+			// Coffee
 			cout << "No coffee for you!\n";
 		}
-		else if (acx == "hack") {
-			cout << "No.\n";
-			continue;
+		else if (cmd == "hack")
+		{
+			// Hack			
 			cout << "Password: ";
-			string uPass;
+
+			// Get input
 			cin >> uPass;
-			if (uPass == "C++") {
+			if (uPass == "C++") 
+			{
+				// Correct
 				coins = coins + 9999999999;
 				paper = paper + 9999999999;
 			}
-			else {
+			else 
+			{
+				// Incorrect
 				cout << "Incorrect!";
 			}
 		}
-		else if (acx == "cls" || acx == "CLS" || acx == "Cls") {
+		else if (cmd == "cls" || cmd == "CLS" || cmd == "Cls") 
+		{
+		// Clear (cls)
 			system("CLS");
 		}
-		else if (acx == "spam"){
+		else if (cmd == "spam") 
+		{
+			// Spam
 			cout << "Spamming 100000 charecters\n";
+
+			// Wait 1 second
 			Sleep(1000);
-			int a = 0;
-			int b = 0;
-			char chars[92] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', '[', ']', ';', ',', '.', '/', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '{', '}', '|', ':', '<', '>', '?', 'Q', 'W', 'E', 'R', 'T', 'Y,', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M' };
-			while (a == 0) {
-				if (b < 100000) {
+
+			// Set charecters to spam
+			char chars[92] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', '[', ']', ';', ',', '.', '/', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '{', '}', '|', ':', '<', '>', '?', 'Q', 'W', 'E', 'R', 'T', 'Y,', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', ' ' };
+
+			// Start spamming
+			while (a == 0) 
+			{
+
+				// Check if spammed 100000 charecters already
+				if (b < 100000) 
+				{
+					// Spam
+
+					//Get char
 					char letter = chars[rand() % 91 + 1];
+
+					// Print char
 					cout << letter;
+
+					// Add one to var b
 					b++;
 				}
-				else {
+				else 
+				{
+					// Break
 					a = 1;
 					break;
 				}
 			}
+
+			// End spam
 			cout << "\nSpam ended\n";
 		}
-		else if (acx == "exit") {
+		else if (cmd == "exit") 
+		{
+		// Exit
 			break;
 		}
-		else {
+		else if (cmd == "add")
+		{
+		cout << "Number one to add?\n";
+		cin >> numOne;
+		cout << "Number two to add?\n";
+		cin >> numTwo;
+		cout << numOne+numTwo;
+		}
+		else if (cmd == "subtract")
+		{
+		cout << "Number one to subtract?\n";
+		cin >> numOne; 
+		cout << "Number two to subtract?\n";
+		cin >> numTwo;
+		cout << numOne - numTwo;
+		}
+		else if (cmd == "subtract")
+		{
+		cout << "Number one to multiply?\n";
+		cin >> numOne;
+		cout << "Number two to multiply?\n";
+		cin >> numTwo;
+		cout << numOne * numTwo;
+		}
+		else if (cmd == "divide")
+		{
+		cout << "Number one to divide?\n";
+		cin >> numOne;
+		cout << "Number two to divide?\n";
+		cin >> numTwo;
+		cout << numOne / numTwo;
+		}
+		else 
+		{
 			continue;
 		}
 	}
 }
 
 
- 
+
