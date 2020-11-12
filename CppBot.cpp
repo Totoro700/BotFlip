@@ -1,23 +1,11 @@
 // C++ Bot
 // 
-// How to use
-//  1. Run the script
-//	2. type help for a list of commands
-// 
-//  
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
 
 #include <iostream>;
 #include <Windows.h>;
 
 // Std
+
 using namespace std;
 
 
@@ -250,6 +238,7 @@ int main()
 		}
 		else if (cmd == "add")
 		{
+		// Add
 		cout << "Number one to add?\n";
 		cin >> numOne;
 		cout << "Number two to add?\n";
@@ -258,6 +247,7 @@ int main()
 		}
 		else if (cmd == "subtract" || cmd=="sub")
 		{
+		// Subtract
 		cout << "Number one to subtract?\n";
 		cin >> numOne; 
 		cout << "Number two to subtract?\n";
@@ -266,6 +256,7 @@ int main()
 		}
 		else if (cmd == "multiply" || cmd == "mul")
 		{
+		// Multiply
 		cout << "Number one to multiply?\n";
 		cin >> numOne;
 		cout << "Number two to multiply?\n";
@@ -274,6 +265,7 @@ int main()
 		}
 		else if (cmd == "divide" || cmd == "div")
 		{
+		// Divide
 		cout << "Number one to divide?\n";
 		cin >> numOne;
 		cout << "Number two to divide?\n";
@@ -282,11 +274,13 @@ int main()
 		}
 		else if (cmd == "ver") 
 		{
+		// Version
 		cout << "C++ Bot. Version 1.2\n";
 		}
 		else if (cmd == "spcfcVer" || cmd == "sVer") 
 		{
-		cout << "C++ Bot. Version 1.2.1o\n";
+		// Specific version
+		cout << "C++ Bot. Version 1.2.5o\n";
 		}
 		else 
 		{
