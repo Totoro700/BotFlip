@@ -1,9 +1,26 @@
+// C++ Bot
+// 
+// How to use
+//  1. Run the script
+//	2. type help for a list of commands
+// 
+//  
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
 
 #include <iostream>;
 #include <Windows.h>;
 
 // Std
 using namespace std;
+
+
 
 // Main
 int main() 
@@ -35,25 +52,28 @@ int main()
 		cin >> cmd;
 
 		// Start checking for commands 
-		if (cmd == "help") 
+		if (cmd == "help" || cmd == "hlp") 
 		{
 			// Help
-			cout << "help - Displays this help message\n";
-			cout << "playCoins - Play for a chance to get coins!\n";
-			cout << "playPaper - Play for a chance to get paper!\n";
-			cout << "coins - See all the coins you have\n";
-			cout << "paper - See all the paper you have\n";
-			cout << "sell - Sell the paper you have\n";
-			cout << "steal - [None] \n";
-			cout << "givemecoffee - Gives you coffee\n";
-			cout << "cls - Clears all the text on the screen\n";
-			cout << "spam - Program spams\n";
-			cout << "exit - Exits this program\n";
-			cout << "add - Adds two numbers\n";
-			cout << "subtract - Sutracts two numbers\n";
-			cout << "multiply - Mu";
-		}
-		else if (cmd == "playCoins") 
+			cout << "Format: [command name] - [description] - [id]\n";
+			cout << "help - Displays this help message - hlp\n";
+			cout << "playCoins - Play for a chance to get coins! - plyCns\n";
+			cout << "playPaper - Play for a chance to get paper! - plyPpr\n";
+			cout << "coins - See all the coins you have - cns\n";
+			cout << "paper - See all the paper you have - ppr\n";
+			cout << "sell - Sell the paper you have - sll\n";
+			cout << "steal - Steal - stl\n";
+			cout << "givemecoffee - Gives you coffee - gvmcff\n";
+			cout << "cls - Clears all the text on the screen - cls\n";
+			cout << "spam - Program spams - spm\n";
+			cout << "exit - Exits this program - ext\n";
+			cout << "add - Adds two numbers - add\n";
+			cout << "subtract - Sutracts two numbers - sbtrct\n";
+			cout << "multiply - Multiplies two numbers - mul\n";
+			cout << "divide - Divides two numbers - div\n";
+			cout << "ver - Displays the version - ver\n";
+			cout << "spcfcVer - Displays the specific version -sVer\n";
+		}else if (cmd == "playCoins" || cmd == "plyCns") 
 		{
 			// Coins
 			// Generate random number
@@ -76,7 +96,7 @@ int main()
 				cout << "Incorrect!\n";
 			}
 		}
-		else if (cmd == "playPaper") 
+		else if (cmd == "playPaper" || cmd == "plyPpr") 
 		{
 			// Generate random number from 1 to 100
 			int rNum = rand() % 100 + 1;
@@ -98,7 +118,7 @@ int main()
 				cout << "Incorrect!\n";
 			}
 		}
-		else if (cmd == "coins") 
+		else if (cmd == "coins" || cmd == "cns") 
 		{
 			// Get coins
 			cout << "Coins: ";
@@ -114,10 +134,10 @@ int main()
 		}
 		else if (cmd == "steal") 
 		{
-			// No stealing allowed 
+			// Steal
 			cout << "No.\n";
 		}
-		else if (cmd == "sell") 
+		else if (cmd == "sell" || cmd == "sll") 
 		{
 			// Sell paper
 			if (paper == 0) 
@@ -147,11 +167,6 @@ int main()
 				}
 			}
 		}
-		else if (cmd == "NULL") 
-		{
-			// Null
-			cout << "No.\n";
-		}
 		else if (cmd.empty()) 
 		{
 			throw "Command is empty";
@@ -159,10 +174,10 @@ int main()
 			cout << "";
 			continue;
 		}
-		else if (cmd == "givemecoffee") 
+		else if (cmd == "givemecoffee" || cmd == "gvmcff") 
 		{
 			// Coffee
-			cout << "No coffee for you!\n";
+			cout << "No.\n";
 		}
 		else if (cmd == "hack")
 		{
@@ -228,7 +243,7 @@ int main()
 			// End spam
 			cout << "\nSpam ended\n";
 		}
-		else if (cmd == "exit") 
+		else if (cmd == "exit" || cmd == "ext") 
 		{
 		// Exit
 			break;
@@ -241,7 +256,7 @@ int main()
 		cin >> numTwo;
 		cout << numOne+numTwo;
 		}
-		else if (cmd == "subtract")
+		else if (cmd == "subtract" || cmd=="sub")
 		{
 		cout << "Number one to subtract?\n";
 		cin >> numOne; 
@@ -249,7 +264,7 @@ int main()
 		cin >> numTwo;
 		cout << numOne - numTwo;
 		}
-		else if (cmd == "subtract")
+		else if (cmd == "multiply" || cmd == "mul")
 		{
 		cout << "Number one to multiply?\n";
 		cin >> numOne;
@@ -257,7 +272,7 @@ int main()
 		cin >> numTwo;
 		cout << numOne * numTwo;
 		}
-		else if (cmd == "divide")
+		else if (cmd == "divide" || cmd == "div")
 		{
 		cout << "Number one to divide?\n";
 		cin >> numOne;
@@ -265,8 +280,17 @@ int main()
 		cin >> numTwo;
 		cout << numOne / numTwo;
 		}
+		else if (cmd == "ver") 
+		{
+		cout << "C++ Bot. Version 1.2\n";
+		}
+		else if (cmd == "spcfcVer" || cmd == "sVer") 
+		{
+		cout << "C++ Bot. Version 1.2.1o\n";
+		}
 		else 
 		{
+			// Not a listed command
 			continue;
 		}
 	}
