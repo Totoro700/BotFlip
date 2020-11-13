@@ -3,6 +3,7 @@
 
 #include <iostream>;
 #include <Windows.h>;
+#include <cmath>;
 
 // Std
 
@@ -28,6 +29,8 @@ int main()
 	int numOne = 0;
 	int numTwo = 0;
 	string uPass;
+	string data[10] = {};
+	string toStore;
 
 	// Clear
 	system("CLS");
@@ -238,49 +241,70 @@ int main()
 		}
 		else if (cmd == "add")
 		{
-		// Add
-		cout << "Number one to add?\n";
-		cin >> numOne;
-		cout << "Number two to add?\n";
-		cin >> numTwo;
-		cout << numOne+numTwo;
+			// Add
+			cout << "Number one to add?\n";
+			cin >> numOne;
+			cout << "Number two to add?\n";
+			cin >> numTwo;
+			cout << numOne+numTwo;
 		}
-		else if (cmd == "subtract" || cmd=="sub")
+		else if (cmd == "subtract" || cmd == "sub")
 		{
-		// Subtract
-		cout << "Number one to subtract?\n";
-		cin >> numOne; 
-		cout << "Number two to subtract?\n";
-		cin >> numTwo;
-		cout << numOne - numTwo;
+			// Subtract
+			cout << "Number one to subtract?\n";
+			cin >> numOne;
+			cout << "Number two to subtract?\n";
+			cin >> numTwo;
+			cout << numOne - numTwo;
 		}
 		else if (cmd == "multiply" || cmd == "mul")
 		{
-		// Multiply
-		cout << "Number one to multiply?\n";
-		cin >> numOne;
-		cout << "Number two to multiply?\n";
-		cin >> numTwo;
-		cout << numOne * numTwo;
+			// Multiply
+			cout << "Number one to multiply?\n";
+			cin >> numOne;
+			cout << "Number two to multiply?\n";
+			cin >> numTwo;
+			cout << numOne * numTwo;
 		}
 		else if (cmd == "divide" || cmd == "div")
 		{
-		// Divide
-		cout << "Number one to divide?\n";
+			// Divide
+			cout << "Number one to divide?\n";
+			cin >> numOne;
+			cout << "Number two to divide?\n";
+			cin >> numTwo;
+			cout << numOne / numTwo;
+		}
+		else if (cmd == "ver")
+		{
+			// Version
+			cout << "C++ Bot. Version 1.2\n";
+		}
+		else if (cmd == "spcfcVer" || cmd == "sVer")
+		{
+			// Specific version
+			cout << "C++ Bot. Version 1.2.5o\n";
+		}
+		else if (cmd == "sin" || cmd == "sine")
+		{
+			// Sine
+			cout << "Number?\n";
+			cin >> numOne;
+			cout << sin(numOne);
+		}
+		else if (cmd == "cos" || cmd == "cosine")
+		{
+		// Cosine
+		cout << "Number?\n";
 		cin >> numOne;
-		cout << "Number two to divide?\n";
-		cin >> numTwo;
-		cout << numOne / numTwo;
+		cout << cos(numOne);
 		}
-		else if (cmd == "ver") 
+		else if (cmd == "sin" || cmd == "sine")
 		{
-		// Version
-		cout << "C++ Bot. Version 1.2\n";
-		}
-		else if (cmd == "spcfcVer" || cmd == "sVer") 
-		{
-		// Specific version
-		cout << "C++ Bot. Version 1.2.5o\n";
+		// Tangent
+		cout << "Number?\n";
+		cin >> numOne;
+		cout << tan(numOne);
 		}
 		else 
 		{
