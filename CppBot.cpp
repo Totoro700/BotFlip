@@ -62,6 +62,9 @@ int main()
 			cout << "subtract - Sutracts two numbers - sbtrct\n";
 			cout << "multiply - Multiplies two numbers - mul\n";
 			cout << "divide - Divides two numbers - div\n";
+			cout << "sine - Calculates sine of one number - sin\n";
+			cout << "cosine - Calculates cosine one number - cos\n";
+			cout << "tangent - Calculates tangent on number - tan\n";
 			cout << "ver - Displays the version - ver\n";
 			cout << "spcfcVer - Displays the specific version -sVer\n";
 		}else if (cmd == "playCoins" || cmd == "plyCns") 
@@ -247,6 +250,7 @@ int main()
 			cout << "Number two to add?\n";
 			cin >> numTwo;
 			cout << numOne+numTwo;
+			cout << "\n";
 		}
 		else if (cmd == "subtract" || cmd == "sub")
 		{
@@ -256,6 +260,7 @@ int main()
 			cout << "Number two to subtract?\n";
 			cin >> numTwo;
 			cout << numOne - numTwo;
+			cout << "\n";
 		}
 		else if (cmd == "multiply" || cmd == "mul")
 		{
@@ -265,6 +270,7 @@ int main()
 			cout << "Number two to multiply?\n";
 			cin >> numTwo;
 			cout << numOne * numTwo;
+			cout << "\n";
 		}
 		else if (cmd == "divide" || cmd == "div")
 		{
@@ -274,6 +280,7 @@ int main()
 			cout << "Number two to divide?\n";
 			cin >> numTwo;
 			cout << numOne / numTwo;
+			cout << "\n";
 		}
 		else if (cmd == "ver")
 		{
@@ -283,7 +290,7 @@ int main()
 		else if (cmd == "spcfcVer" || cmd == "sVer")
 		{
 			// Specific version
-			cout << "C++ Bot. Version 1.2.5o\n";
+			cout << "C++ Bot. Version 1.2.7o\n";
 		}
 		else if (cmd == "sin" || cmd == "sine")
 		{
@@ -291,20 +298,23 @@ int main()
 			cout << "Number?\n";
 			cin >> numOne;
 			cout << sin(numOne);
+			cout << "\n";
 		}
 		else if (cmd == "cos" || cmd == "cosine")
 		{
-		// Cosine
-		cout << "Number?\n";
-		cin >> numOne;
-		cout << cos(numOne);
+			// Cosine
+			cout << "Number?\n";
+			cin >> numOne;
+			cout << cos(numOne);
+			cout << "\n";
 		}
-		else if (cmd == "sin" || cmd == "sine")
+		else if (cmd == "tan" || cmd == "tangent")
 		{
-		// Tangent
-		cout << "Number?\n";
-		cin >> numOne;
-		cout << tan(numOne);
+			// Tangent
+			cout << "Number?\n";
+			cin >> numOne;
+			cout << tan(numOne);
+			cout << "\n";
 		}
 		else 
 		{
