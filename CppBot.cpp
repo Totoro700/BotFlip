@@ -1,73 +1,131 @@
-// C++ Bot
-// 
+// Iostream for basic commands
 
-#include <iostream>;
-#include <Windows.h>;
+#include <iostream>
+
+// Windows for Sleep command
+
+#include <Windows.h>
+
+// Cmath for trigonometric commands
+
 #include <cmath>;
 
-// Std
 
+
+// Std
 using namespace std;
 
 
 
+// Clear screen
+void clear()
+{
+	system("CLS");
+}
+
+void e()
+{
+	cout << "Something went wrong! Please try again\n";
+}
+
 // Main
-int main() 
+int main()
 {
 
 	// Create variables
-	string cmd;
+
+	// Int
 	int coins = 0;
 	int paper = 1;
 	int rNum = 0;
 	int uNum = 0;
 	int a = 0;
 	int b = 0;
+	int numToSell = 0;
+	int modNumOne;
+	int modNumTwo;
+
+	// Char
 	char letter = NULL;
 	char chars = NULL;
-	int numToSell = 0;
-	int numOne = 0;
-	int numTwo = 0;
+
+	// Float
+	float numOne = 0;
+	float numTwo = 0;
+
+	// String
+	string cmd;
 	string uPass;
 	string data[10] = {};
 	string toStore;
+	string ver = "1.3.0o";
 
+	for (int i = 0; i < 101; i++)
+	{
+		// Load
+		cout << "[]";
+	}
+
+
+	Sleep(1000);
 	// Clear
-	system("CLS");
+	clear();
+
+	cout << "C++_Bot.cpp";
+	cout << ver;
+	cout << "\n";
+	cout << "-----------------------------------------------------------------\n";
+
+
 
 	// Main loop
-	while (0 == 0) 
+	while (0 == 0)
 	{
 
 		// Get input
 		cin >> cmd;
 
 		// Start checking for commands 
-		if (cmd == "help" || cmd == "hlp") 
+		if (cmd == "help" || cmd == "hlp")
 		{
-			// Help
-			cout << "Format: [command name] - [description] - [id]\n";
-			cout << "help - Displays this help message - hlp\n";
-			cout << "playCoins - Play for a chance to get coins! - plyCns\n";
-			cout << "playPaper - Play for a chance to get paper! - plyPpr\n";
-			cout << "coins - See all the coins you have - cns\n";
-			cout << "paper - See all the paper you have - ppr\n";
-			cout << "sell - Sell the paper you have - sll\n";
-			cout << "steal - Steal - stl\n";
-			cout << "givemecoffee - Gives you coffee - gvmcff\n";
-			cout << "cls - Clears all the text on the screen - cls\n";
-			cout << "spam - Program spams - spm\n";
-			cout << "exit - Exits this program - ext\n";
-			cout << "add - Adds two numbers - add\n";
-			cout << "subtract - Sutracts two numbers - sbtrct\n";
-			cout << "multiply - Multiplies two numbers - mul\n";
-			cout << "divide - Divides two numbers - div\n";
-			cout << "sine - Calculates sine of one number - sin\n";
-			cout << "cosine - Calculates cosine one number - cos\n";
-			cout << "tangent - Calculates tangent on number - tan\n";
-			cout << "ver - Displays the version - ver\n";
-			cout << "spcfcVer - Displays the specific version -sVer\n";
-		}else if (cmd == "playCoins" || cmd == "plyCns") 
+			try
+			{
+
+				// Help
+				cout << "Format: [command name] - [description] - [id]\n";
+				cout << "help - Displays this help message - hlp\n";
+				cout << "playCoins - Play for a chance to get coins! - plyCns\n";
+				cout << "playPaper - Play for a chance to get paper! - plyPpr\n";
+				cout << "coins - See all the coins you have - cns\n";
+				cout << "paper - See all the paper you have - ppr\n";
+				cout << "sell - Sell the paper you have - sll\n";
+				cout << "steal - Steal - stl\n";
+				cout << "givemecoffee - Gives you coffee - gvmcff\n";
+				cout << "cls - Clears all the text on the screen - cls\n";
+				cout << "spam - Program spams - spm\n";
+				cout << "exit - Exits this program - ext\n";
+				cout << "add - Adds two numbers - add\n";
+				cout << "subtract - Sutracts two numbers - sbtrct\n";
+				cout << "multiply - Multiplies two numbers - mul\n";
+				cout << "divide - Divides two numbers - div\n";
+				cout << "modulus - Calculates the modules (mod) of two numbers - mod\n";
+				cout << "sine - Calculates sine of one number - sin\n";
+				cout << "cosine - Calculates cosine one number - cos\n";
+				cout << "tangent - Calculates tangent on number - tan\n";
+				cout << "ver - Displays the version - ver\n";
+				cout << "spcfcVer - Displays the specific version - sVer\n";
+				cout << "changeLog - Displays the change log for the current version - sysCL\n";
+			}
+			catch(...)
+			{
+				e();
+			}
+		}
+		else if (cmd=="Hi" || cmd == "hi")
+		{
+			cout << "Hi! Type help for a list of commands you can use\n";
+		}
+		else if (cmd == "playCoins" || cmd == "plyCns")
 		{
 			// Coins
 			// Generate random number
@@ -78,19 +136,19 @@ int main()
 			cin >> uNum;
 
 			// Check if correct
-			if (uNum == rNum) 
+			if (uNum == rNum)
 			{
 				// Correct
 				cout << "Correct!\n";
 				coins++;
 			}
-			else 
+			else
 			{
 				// Incorrect
 				cout << "Incorrect!\n";
 			}
 		}
-		else if (cmd == "playPaper" || cmd == "plyPpr") 
+		else if (cmd == "playPaper" || cmd == "plyPpr")
 		{
 			// Generate random number from 1 to 100
 			int rNum = rand() % 100 + 1;
@@ -100,46 +158,46 @@ int main()
 			cin >> uNum;
 
 			// Check if correct
-			if (uNum == rNum) 
+			if (uNum == rNum)
 			{
 				// Correct
 				cout << "Correct!\n";
 				paper++;
 			}
-			else 
+			else
 			{
 				// Incorrect
 				cout << "Incorrect!\n";
 			}
 		}
-		else if (cmd == "coins" || cmd == "cns") 
+		else if (cmd == "coins" || cmd == "cns")
 		{
 			// Get coins
 			cout << "Coins: ";
 			cout << coins;
 			cout << "\n";
 		}
-		else if (cmd == "paper") 
+		else if (cmd == "paper")
 		{
 			// Get paper
 			cout << "Paper: ";
 			cout << paper;
 			cout << "\n";
 		}
-		else if (cmd == "steal") 
+		else if (cmd == "steal")
 		{
 			// Steal
 			cout << "No.\n";
 		}
-		else if (cmd == "sell" || cmd == "sll") 
+		else if (cmd == "sell" || cmd == "sll")
 		{
 			// Sell paper
-			if (paper == 0) 
+			if (paper == 0)
 			{
 				// No paper to sell
 				cout << "You don't even have paper to sell!\n";
 			}
-			else 
+			else
 			{
 				cout << "For every paper you sell, you get 10 coins\n";
 				cout << "How many papers do you want to sell?\n";
@@ -148,12 +206,12 @@ int main()
 				cin >> numToSell;
 
 				// Check
-				if (numToSell > paper) 
+				if (numToSell > paper)
 				{
 					// Not enough paper
 					cout << "You don't have enough paper!\n";
 				}
-				else 
+				else
 				{
 					// Sell
 					paper = paper - numToSell;
@@ -161,14 +219,14 @@ int main()
 				}
 			}
 		}
-		else if (cmd.empty()) 
+		else if (cmd.empty())
 		{
 			throw "Command is empty";
 			// Blank
 			cout << "";
 			continue;
 		}
-		else if (cmd == "givemecoffee" || cmd == "gvmcff") 
+		else if (cmd == "givemecoffee" || cmd == "gvmcff")
 		{
 			// Coffee
 			cout << "No.\n";
@@ -180,66 +238,72 @@ int main()
 
 			// Get input
 			cin >> uPass;
-			if (uPass == "C++") 
+			if (uPass == "C++")
 			{
 				// Correct
 				coins = coins + 9999999999;
 				paper = paper + 9999999999;
 			}
-			else 
+			else
 			{
 				// Incorrect
 				cout << "Incorrect!";
 			}
 		}
-		else if (cmd == "cls" || cmd == "CLS" || cmd == "Cls") 
+		else if (cmd == "cls" || cmd == "CLS" || cmd == "Cls")
 		{
-		// Clear (cls)
-			system("CLS");
+			// Clear (cls)
+			clear();
 		}
-		else if (cmd == "spam") 
+
+		else if (cmd == "spam")
 		{
 			// Spam
 			cout << "Spamming 100000 charecters\n";
 
 			// Wait 1 second
 			Sleep(1000);
-
-			// Set charecters to spam
-			char chars[92] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', '[', ']', ';', ',', '.', '/', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '{', '}', '|', ':', '<', '>', '?', 'Q', 'W', 'E', 'R', 'T', 'Y,', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', ' ' };
-
-			// Start spamming
-			while (a == 0) 
+			try
 			{
+				// Set charecters to spam
+				char chars[92] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', '[', ']', ';', ',', '.', '/', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '{', '}', '|', ':', '<', '>', '?', 'Q', 'W', 'E', 'R', 'T', 'Y,', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', ' ' };
 
-				// Check if spammed 100000 charecters already
-				if (b < 100000) 
+				// Start spamming
+				while (a == 0)
 				{
-					// Spam
 
-					//Get char
-					char letter = chars[rand() % 91 + 1];
+					// Check if spammed 100000 charecters already
+					if (b < 100000)
+					{
+						// Spam
 
-					// Print char
-					cout << letter;
+						//Get char
+						char letter = chars[rand() % 91 + 1];
 
-					// Add one to var b
-					b++;
-				}
-				else 
-				{
-					// Break
-					a = 1;
-					break;
+						// Print char
+						cout << letter;
+
+						// Add one to var b
+						b++;
+					}
+					else
+					{
+						// Break
+						a = 1;
+						break;
+					}
 				}
 			}
-
+			catch (...)
+			{
+				e();
+			}
 			// End spam
 			cout << "\nSpam ended\n";
 		}
-		else if (cmd == "exit" || cmd == "ext") 
+		else if (cmd == "exit" || cmd == "ext")
 		{
-		// Exit
+			// Exit
 			break;
 		}
 		else if (cmd == "add")
@@ -249,7 +313,7 @@ int main()
 			cin >> numOne;
 			cout << "Number two to add?\n";
 			cin >> numTwo;
-			cout << numOne+numTwo;
+			cout << numOne + numTwo;
 			cout << "\n";
 		}
 		else if (cmd == "subtract" || cmd == "sub")
@@ -282,15 +346,38 @@ int main()
 			cout << numOne / numTwo;
 			cout << "\n";
 		}
+		else if (cmd == "modulus" || cmd == "mod")
+		{
+			// Modules
+			cout << "Number one to calculate modulus?\n";
+			cin >> modNumOne;
+			cout << "Number two to calculate modulus\n";
+			cin >> modNumTwo;
+			cout << modNumOne % modNumTwo;
+			cout << "\n";
+		}
 		else if (cmd == "ver")
 		{
 			// Version
-			cout << "C++ Bot. Version 1.2\n";
+			cout << "C++ Bot. Version 1.3\n";
 		}
 		else if (cmd == "spcfcVer" || cmd == "sVer")
 		{
 			// Specific version
-			cout << "C++ Bot. Version 1.2.7o\n";
+			cout << "C++ Bot. Version ";
+			cout << ver;
+			cout << "\n";
+		}
+		else if (cmd == "changeLog" || cmd=="sysCL")
+		{
+			// Change log
+			cout << "Change log for ";
+			cout << ver;
+			cout << "\n";
+			cout << "New fixes:\n";
+			cout << "[None]\n";
+			cout << "New functions:\n";
+			cout << "Modulus function\n";
 		}
 		else if (cmd == "sin" || cmd == "sine")
 		{
@@ -316,7 +403,7 @@ int main()
 			cout << tan(numOne);
 			cout << "\n";
 		}
-		else 
+		else
 		{
 			// Not a listed command
 			continue;
