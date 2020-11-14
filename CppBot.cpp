@@ -1,21 +1,12 @@
-// Iostream for basic commands
-
 #include <iostream>
 
-// Windows for Sleep command
 
 #include <Windows.h>
 
-// Cmath for trigonometric commands
 
 #include <cmath>;
 
-
-
-// Std
 using namespace std;
-
-
 
 // Clear screen
 void clear()
@@ -27,6 +18,7 @@ void e()
 {
 	cout << "Something went wrong! Please try again\n";
 }
+
 
 // Main
 int main()
@@ -58,20 +50,14 @@ int main()
 	string uPass;
 	string data[10] = {};
 	string toStore;
-	string ver = "1.3.0o";
-
-	for (int i = 0; i < 101; i++)
-	{
-		// Load
-		cout << "[]";
-	}
+	string ver = "1.3.1o";
 
 
 	Sleep(1000);
 	// Clear
 	clear();
 
-	cout << "C++_Bot.cpp";
+	cout << "C++_Bot.cpp\n";
 	cout << ver;
 	cout << "\n";
 	cout << "-----------------------------------------------------------------\n";
@@ -112,6 +98,7 @@ int main()
 				cout << "sine - Calculates sine of one number - sin\n";
 				cout << "cosine - Calculates cosine one number - cos\n";
 				cout << "tangent - Calculates tangent on number - tan\n";
+				cout << "";
 				cout << "ver - Displays the version - ver\n";
 				cout << "spcfcVer - Displays the specific version - sVer\n";
 				cout << "changeLog - Displays the change log for the current version - sysCL\n";
@@ -121,11 +108,11 @@ int main()
 				e();
 			}
 		}
-		else if (cmd=="Hi" || cmd == "hi")
+		else if (cmd=="Hi" || cmd == "hi" || cmd=="Hi!" || cmd=="hi!" || cmd=="Hello" || cmd=="hello" || cmd=="Hello!" || cmd=="hello!")
 		{
 			cout << "Hi! Type help for a list of commands you can use\n";
 		}
-		else if (cmd == "playCoins" || cmd == "plyCns")
+		else if (cmd == "playCoins" || cmd == "plyCns" || cmd == "play_coins" || cmd == "plyCns")
 		{
 			// Coins
 			// Generate random number
@@ -148,7 +135,7 @@ int main()
 				cout << "Incorrect!\n";
 			}
 		}
-		else if (cmd == "playPaper" || cmd == "plyPpr")
+		else if (cmd == "playPaper" || cmd == "plyPpr" || cmd=="play_paper" || cmd=="ply_ppr")
 		{
 			// Generate random number from 1 to 100
 			int rNum = rand() % 100 + 1;
@@ -266,7 +253,15 @@ int main()
 			try
 			{
 				// Set charecters to spam
-				char chars[92] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', '[', ']', ';', ',', '.', '/', '~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '{', '}', '|', ':', '<', '>', '?', 'Q', 'W', 'E', 'R', 'T', 'Y,', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', ' ' };
+				char chars[100] = {
+
+				'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+				'`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', '[', ']', ';', ',', '.', '/', '~', '!', '@', '#', '$', '%', '^',
+				'&', '*', '(', ')', '_', '+', '{', '}', '|', ':', '<', '>', '?', 'Q', 'W', 'E', 'R', 'T', 'Y,', 'U', 'I', 'O', 'P', 'A', 'S', 'D',
+				'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', ' ', '\u0201', '\u00a1', '\u00a2', '\u00a3', '\u00a4', '\u00a5',
+				'\u00a6', '\u00a7'
+				
+				};
 
 				// Start spamming
 				while (a == 0)
@@ -290,7 +285,6 @@ int main()
 					{
 						// Break
 						a = 1;
-						break;
 					}
 				}
 			}
@@ -298,8 +292,6 @@ int main()
 			{
 				e();
 			}
-			// End spam
-			cout << "\nSpam ended\n";
 		}
 		else if (cmd == "exit" || cmd == "ext")
 		{
@@ -375,9 +367,7 @@ int main()
 			cout << ver;
 			cout << "\n";
 			cout << "New fixes:\n";
-			cout << "[None]\n";
-			cout << "New functions:\n";
-			cout << "Modulus function\n";
+			cout << "Hello command\n";
 		}
 		else if (cmd == "sin" || cmd == "sine")
 		{
