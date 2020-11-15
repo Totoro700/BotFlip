@@ -20,6 +20,7 @@ void e()
 }
 
 
+
 // Main
 int main()
 {
@@ -36,6 +37,7 @@ int main()
 	int numToSell = 0;
 	int modNumOne;
 	int modNumTwo;
+	int charSpam;
 
 	// Char
 	char letter = NULL;
@@ -62,7 +64,7 @@ int main()
 	cout << "\n";
 	cout << "-----------------------------------------------------------------\n";
 
-	Sleep(5000);
+	Sleep(2500);
 
 	clear();
 
@@ -247,6 +249,10 @@ int main()
 
 		else if (cmd == "spam")
 		{
+			// Reset
+			a = 0;
+			b = 0;
+
 			// Spam
 			cout << "Spamming 100000 charecters\n";
 
@@ -270,12 +276,12 @@ int main()
 				{
 
 					// Check if spammed 100000 charecters already
-					if (b < 100000)
+					if (b < 100001)
 					{
 						// Spam
 
 						//Get char
-						char letter = chars[rand() % 91 + 1];
+						char letter = chars[rand() % 100 + 1];
 
 						// Print char
 						cout << letter;
@@ -286,7 +292,9 @@ int main()
 					else
 					{
 						// Break
+						cout << "\n";
 						a = 1;
+						break;
 					}
 				}
 			}
@@ -297,8 +305,15 @@ int main()
 		}
 		else if (cmd == "exit" || cmd == "ext")
 		{
-			// Exit
-			break;
+			try 
+			{
+				// Exit
+				break;
+			}
+			catch (...)
+			{
+				break;
+			}
 		}
 		else if (cmd == "add")
 		{
