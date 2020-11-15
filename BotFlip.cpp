@@ -346,7 +346,7 @@ class BotFlip {
 	}
 
 	// Version
-	void ver()
+	void version()
 	{
 		// Version
 		cout << "C++ Bot. Version 1.3\n";
@@ -404,6 +404,10 @@ class BotFlip {
 	}
 };
 
+constexpr unsigned int str2int(const char* str, int h = 0)
+{
+	return !str[h] ? 5381 : (str2int(str, h + 1) * 33) ^ str[h];
+}
 
 
 
@@ -413,8 +417,7 @@ int main()
 	BotFlip b;
 		
 
-	string cmd;
-
+	char* cmd = new char[CMSG_MAX_LENGTH_FLAG];
 
 	Sleep(1000);
 	// Clear
@@ -437,102 +440,102 @@ int main()
 		cin >> cmd;
 
 		// Check for commands
-		switch (cmd)
+		switch (str2int(cmd))
 		{
-			case "help":
-			case "hlp":
+			case str2int("help"):
+			case str2int("hlp"):
 				b.help();
 				break;
-			case "Hi":
-			case "hi":
-			case "Hi!":
-			case "hi!":
-			case "Hello":
-			case "hello":
-			case "Hello!":
-			case "hello!":
+			case str2int("Hi"):
+			case str2int("hi"):
+			case str2int("Hi!"):
+			case str2int("hi!"):
+			case str2int("Hello"):
+			case str2int("hello"):
+			case str2int("Hello!"):
+			case str2int("hello!"):
 				cout << "Hi! Type help for a list of commands you can use\n";
 				break;
-			case "playCoins":
-			case "plyCns":
-			case "play_coins":
-			case "plyCns":
+			case str2int("playCoins"):
+			case str2int("plyCns"):
+			case str2int("play_coins"):
+			case str2int("ply_cns"):
 				b.playCoins();
 				break;
-			case "playPaper":
-			case "plyPpr":
-			case "play_paper":
-			case "ply_ppr":
+			case str2int("playPaper"):
+			case str2int("plyPpr"):
+			case str2int("play_paper"):
+			case str2int("ply_ppr"):
 				b.playPaper();
 				break;
-			case "coins":
-			case "cns":
+			case str2int("coins"):
+			case str2int("cns"):
 				b.getCoins();
 				break;
-			case "paper":
-			case "ppr":
+			case str2int("paper"):
+			case str2int("ppr"):
 				b.getPaper();
 				break;
-			case "steal":
+			case str2int("steal"):
 				b.steal();
 				break;
-			case "sell":
-			case "sll":
+			case str2int("sell"):
+			case str2int("sll"):
 				b.sell();
 				break;
-			case "givemecoffee":
-			case "gvmcff":
+			case str2int("givemecoffee"):
+			case str2int("gvmcff"):
 				b.coffee();
 				break;
-			case "hack":
+			case str2int("hack"):
 				b.hack();
-			case "cls":
-			case "CLS":
-			case "Cls":
+			case str2int("cls"):
+			case str2int("CLS"):
+			case str2int("Cls"):
 				b.clear();
 				break;
-			case "spam":
+			case str2int("spam"):
 				b.spam();
 				break;
-			case "add":
+			case str2int("add"):
 				b.add();
 				break;
-			case "subtract":
-			case "sub":
+			case str2int("subtract"):
+			case str2int("sub"):
 				b.subtract();
 				break;
-			case "multiply":
-			case "mul":
+			case str2int("multiply"):
+			case str2int("mul"):
 				b.multiply();
 				break;
-			case "divide":
-			case "div":
+			case str2int("divide"):
+			case str2int("div"):
 				b.divide();
 				break;
-			case "modulus":
-			case "mod":
+			case str2int("modulus"):
+			case str2int("mod"):
 				b.mod();
 				break;
-			case "ver":
-				b.ver();
-			case "spcfcVer":
-			case "sVer":
+			case str2int("ver"):
+				b.version();
+			case str2int("spcfcVer"):
+			case str2int("sVer"):
 				b.spcfcVer();
 				break;
-			case "changeLog":
-			case "sysCL":
+			case str2int("changeLog"):
+			case str2int("sysCL"):
 				b.sysCL();
 				break;
-			case "sine":
-			case "sin":
+			case str2int("sine"):
+			case str2int("sin"):
 				b.sine();
 				break;
-			case "cosine":
-			case "cos":
+			case str2int("cosine"):
+			case str2int("cos"):
 				b.cosine();
 				break;
-			case "tangent":
-			case "tan":
+			case str2int("tangent"):
+			case str2int("tan"):
 				b.tangent();
 				break;
 			default:
