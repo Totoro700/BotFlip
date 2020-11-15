@@ -57,12 +57,14 @@ int main()
 	// Clear
 	clear();
 
-	cout << "C++_Bot.cpp\n";
+	cout << "BotFlip\n";
 	cout << ver;
 	cout << "\n";
 	cout << "-----------------------------------------------------------------\n";
 
+	Sleep(5000);
 
+	clear();
 
 	// Main loop
 	while (0 == 0)
@@ -103,12 +105,12 @@ int main()
 				cout << "spcfcVer - Displays the specific version - sVer\n";
 				cout << "changeLog - Displays the change log for the current version - sysCL\n";
 			}
-			catch(...)
+			catch (...)
 			{
 				e();
 			}
 		}
-		else if (cmd=="Hi" || cmd == "hi" || cmd=="Hi!" || cmd=="hi!" || cmd=="Hello" || cmd=="hello" || cmd=="Hello!" || cmd=="hello!")
+		else if (cmd == "Hi" || cmd == "hi" || cmd == "Hi!" || cmd == "hi!" || cmd == "Hello" || cmd == "hello" || cmd == "Hello!" || cmd == "hello!")
 		{
 			cout << "Hi! Type help for a list of commands you can use\n";
 		}
@@ -135,7 +137,7 @@ int main()
 				cout << "Incorrect!\n";
 			}
 		}
-		else if (cmd == "playPaper" || cmd == "plyPpr" || cmd=="play_paper" || cmd=="ply_ppr")
+		else if (cmd == "playPaper" || cmd == "plyPpr" || cmd == "play_paper" || cmd == "ply_ppr")
 		{
 			// Generate random number from 1 to 100
 			int rNum = rand() % 100 + 1;
@@ -260,7 +262,7 @@ int main()
 				'&', '*', '(', ')', '_', '+', '{', '}', '|', ':', '<', '>', '?', 'Q', 'W', 'E', 'R', 'T', 'Y,', 'U', 'I', 'O', 'P', 'A', 'S', 'D',
 				'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', ' ', '\u0201', '\u00a1', '\u00a2', '\u00a3', '\u00a4', '\u00a5',
 				'\u00a6', '\u00a7'
-				
+
 				};
 
 				// Start spamming
@@ -360,7 +362,7 @@ int main()
 			cout << ver;
 			cout << "\n";
 		}
-		else if (cmd == "changeLog" || cmd=="sysCL")
+		else if (cmd == "changeLog" || cmd == "sysCL")
 		{
 			// Change log
 			cout << "Change log for ";
