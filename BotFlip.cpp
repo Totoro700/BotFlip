@@ -429,6 +429,8 @@ class BotFlip {
 		}
 		clear();
 	}
+
+
 };
 
 // Str to int
@@ -439,21 +441,23 @@ constexpr unsigned int str2int(const char* str, int h = 0)
 
 // Main
 int main()
-{
-
+{	
+	// Include class as b
 	BotFlip b;
 		
+	// Create variable to store for commands
 	char* cmd = new char[CMSG_MAX_LENGTH_FLAG];
 
 	// Clear
 	b.clear();
 
+	// Begining title
 	cout << "BotFlip\n";
 	cout << b.ver;
 	cout << "\n";
-	cout << "-----------------------------------------------------------------\n";
+	cout << "----------------------------------------------------------------------------------\n";
 
-	Sleep(2500);
+	Sleep(1000);
 
 	// Clear
 	b.clear();

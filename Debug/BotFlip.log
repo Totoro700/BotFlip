@@ -1,9 +1,9 @@
 ﻿  BotFlip.cpp
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(30,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(277,74): warning C4566: character represented by universal-character-name '\u0201' cannot be represented in the current code page (1252)
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(240,18): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(241,18): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(276,94): warning C4838: conversion from 'int' to 'char' requires a narrowing conversion
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(280,1): warning C4305: 'initializing': truncation from 'int' to 'char'
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(276,94): warning C4309: 'initializing': truncation of constant value
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(8,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(255,74): warning C4566: character represented by universal-character-name '\u0201' cannot be represented in the current code page (1252)
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(218,18): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(219,18): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(254,94): warning C4838: conversion from 'int' to 'char' requires a narrowing conversion
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(258,1): warning C4305: 'initializing': truncation from 'int' to 'char'
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(254,94): warning C4309: 'initializing': truncation of constant value
   BotFlip.vcxproj -> C:\Users\ianfr\source\repos\BotFlip\Debug\BotFlip.exe
