@@ -8,6 +8,12 @@
 #include <cmath>;
 
 
+#include <math.h>;
+
+
+#include <stdio.h>
+
+
 // #include <opencv2/core/core.hpp>
 
 
@@ -24,6 +30,8 @@ public:
 	// Int
 	int coins = 0;
 	int paper = 1;
+	int num = 0;
+	int toCalcu = 0;
 	int rNum = 0;
 	int uNum = 0;
 	int a = 0;
@@ -455,6 +463,31 @@ public:
 		cin >> tP;
 		cout << tP;
 	}
+
+	// Arcsine
+	void asin()
+	{
+		cout << "Number?\n";
+		cin >> num;
+		cout << std::asin(num);
+	}
+	
+	// Arccosine
+	void acos()
+	{
+		cout << "Number?\n";
+		cin >> num;
+		cout << std::acos(num);
+	}
+
+
+	// Arctangent
+	void atan()
+	{
+		cout << "Number?\n";
+		cin >> num;
+		cout << std::atan(num);
+	}
 };
 
 // Str to int
@@ -600,6 +633,15 @@ int main()
 				break;
 			case str2int("echo"):
 				b.echo();
+				break;
+			case str2int("asin"):
+				b.asin();
+				break;
+			case str2int("acos"):
+				b.acos();
+				break;
+			case str2int("atan"):
+				b.atan();
 				break;
 			default:
 				b.empty();
