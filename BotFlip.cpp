@@ -18,7 +18,7 @@ using namespace std;
 
 // Class
 class BotFlip {
-	public:
+public:
 	// Create variables
 
 	// Int
@@ -45,6 +45,7 @@ class BotFlip {
 	string data[10] = {};
 	string toStore;
 	string ver = "1.3.2o";
+	string tP;
 
 
 	//                     Functions
@@ -199,8 +200,6 @@ class BotFlip {
 
 	void empty()
 	{
-		throw "Command is empty";
-		// Blank
 		cout << "";
 	}
 
@@ -292,8 +291,8 @@ class BotFlip {
 
 	void coffee()
 	{
-			// Coffee
-			cout << "No.\n";
+		// Coffee
+		cout << "No.\n";
 	}
 
 	// Add
@@ -408,7 +407,7 @@ class BotFlip {
 		cout << tan(numOne);
 		cout << "\n";
 	}
-
+	
 	// Load
 	void load()
 	{
@@ -429,8 +428,33 @@ class BotFlip {
 		}
 		clear();
 	}
+	// Text
+	void print(string msg)
+	{
+		int j = 1;
+		while (msg[j] != NULL)
+		{
+			cout << msg[j];
+			Sleep(50);
+			j++;
+		};
+	}
 
-
+	// Check text
+	void checkText()
+	{
+		cout << "To print?\n";
+		cin >> tP;
+		print(tP);
+	}
+	
+	// Echo
+	void echo()
+	{
+		cout << "To echo?\n";
+		cin >> tP;
+		cout << tP;
+	}
 };
 
 // Str to int
@@ -441,10 +465,10 @@ constexpr unsigned int str2int(const char* str, int h = 0)
 
 // Main
 int main()
-{	
+{
 	// Include class as b
 	BotFlip b;
-		
+
 	// Create variable to store for commands
 	char* cmd = new char[CMSG_MAX_LENGTH_FLAG];
 
@@ -570,6 +594,12 @@ int main()
 			case str2int("tangent"):
 			case str2int("tan"):
 				b.tangent();
+				break;
+			case str2int("text"):
+				b.checkText();
+				break;
+			case str2int("echo"):
+				b.echo();
 				break;
 			default:
 				b.empty();
