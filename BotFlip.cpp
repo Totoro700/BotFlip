@@ -472,6 +472,7 @@ public:
 		cout << "Number?\n";
 		cin >> num;
 		cout << std::asin(num);
+		cout << "\n";
 	}
 	
 	// Arccosine
@@ -480,6 +481,7 @@ public:
 		cout << "Number?\n";
 		cin >> num;
 		cout << std::acos(num);
+		cout << "\n";
 	}
 
 
@@ -489,6 +491,7 @@ public:
 		cout << "Number?\n";
 		cin >> num;
 		cout << std::atan(num);
+		cout << "\n";
 	}
 };
 
