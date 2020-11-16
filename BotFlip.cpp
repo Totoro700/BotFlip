@@ -94,10 +94,12 @@ public:
 			cout << "multiply - Multiplies two numbers - mul\n";
 			cout << "divide - Divides two numbers - div\n";
 			cout << "modulus - Calculates the modules (mod) of two numbers - mod\n";
-			cout << "sine - Calculates sine of one number - sin\n";
-			cout << "cosine - Calculates cosine one number - cos\n";
-			cout << "tangent - Calculates tangent on number - tan\n";
-			cout << "";
+			cout << "sine - Calculates sine of on a number - sin\n";
+			cout << "cosine - Calculates cosine on a number - cos\n";
+			cout << "tangent - Calculates tangent on a number - tan\n";
+			cout << "arcsin - Calculates arcsin on a number - asin\n";
+			cout << "arccos - Calculates arccos on a number - acos\n";
+			cout << "arctan - Calculates arctan on a number - atan\n";
 			cout << "ver - Displays the version - ver\n";
 			cout << "spcfcVer - Displays the specific version - sVer\n";
 			cout << "changeLog - Displays the change log for the current version - sysCL\n";
@@ -634,12 +636,15 @@ int main()
 			case str2int("echo"):
 				b.echo();
 				break;
+			case str2int("arcsin"):
 			case str2int("asin"):
 				b.asin();
 				break;
+			case str2int("arccos"):
 			case str2int("acos"):
 				b.acos();
 				break;
+			case str2int("arctan"):
 			case str2int("atan"):
 				b.atan();
 				break;
