@@ -1,3 +1,26 @@
+/*
+* #include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>    
+
+int main()
+{        
+    // read an image
+    cv::Mat image= cv::imread("img.jpg");   
+    // create image window named "My Image"
+    cv::namedWindow("My Image");
+    // show the image on window
+    cv::imshow("My Image", image);
+    // wait key for 5000 ms
+    cv::waitKey(5000);
+
+    return 0;
+}
+Image Libraries: OpenCV, QT, CImg, OpenGL
+* 
+* 
+* 
+*/
+
 #include <iostream>
 
 
@@ -6,8 +29,16 @@
 
 #include <cmath>;
 
+
+// #include <opencv2/core/core.hpp>
+
+
+// #include <opencv2/highgui/highgui.hpp>    
+
+
 using namespace std;
 
+// Class
 class BotFlip {
 	public:
 	// Create variables
@@ -20,9 +51,8 @@ class BotFlip {
 	int a = 0;
 	int b = 0;
 	int numToSell = 0;
-	int modNumOne;
-	int modNumTwo;
-	int charSpam;
+	int modNumOne = 0;
+	int modNumTwo = 0;
 
 	// Char
 	char letter = NULL;
@@ -36,12 +66,10 @@ class BotFlip {
 	string uPass;
 	string data[10] = {};
 	string toStore;
-	string ver = "1.3.1o";
+	string ver = "1.3.2o";
 
 
-
-
-
+	//                     Functions
 
 
 	// Clear screen
@@ -261,7 +289,7 @@ class BotFlip {
 					// Spam
 
 					//Get char
-					char letter = chars[rand() % 100 + 1];
+					char letter = chars[rand() % 101 + 1];
 
 					// Print char
 					cout << letter;
@@ -402,24 +430,43 @@ class BotFlip {
 		cout << tan(numOne);
 		cout << "\n";
 	}
+
+	// Load
+	void load()
+	{
+		for (int i = 0; i < 4; i++)
+		{
+			Sleep(250);
+			clear();
+			cout << "Loading \n";
+			Sleep(250);
+			clear();
+			cout << "Loading .\n";
+			Sleep(250);
+			clear();
+			cout << "Loading . .\n";
+			Sleep(250);
+			clear();
+			cout << "Loading . . .\n";
+		}
+		clear();
+	}
 };
 
+// Str to int
 constexpr unsigned int str2int(const char* str, int h = 0)
 {
 	return !str[h] ? 5381 : (str2int(str, h + 1) * 33) ^ str[h];
 }
 
-
-
 // Main
 int main()
 {
+
 	BotFlip b;
 		
-
 	char* cmd = new char[CMSG_MAX_LENGTH_FLAG];
 
-	Sleep(1000);
 	// Clear
 	b.clear();
 
@@ -430,7 +477,11 @@ int main()
 
 	Sleep(2500);
 
+	// Clear
 	b.clear();
+
+	// Load
+	b.load();
 
 	// Main loop
 	while (0 == 0)
