@@ -1,26 +1,23 @@
 ﻿// Include
-#include <iostream>
+// Iostream
+#include <iostream>;
 
+// Windows
+#include <Windows.h>;
 
-#include <Windows.h>
+// For math
+// Cmath
+#include <cmath>;
 
-
-#include <cmath>
-
-
+// Math.h
 #include <math.h>
 
-
-#include <stdio.h>
-
-
-#include <shellapi.h>
-
-
+// Std
 using namespace std;
 
-// Class
-class BotFlip {
+// Class BotFlip
+class BotFlip 
+{
 public:
 	// Create variables
 
@@ -53,7 +50,7 @@ public:
 	string tP;
 
 
-	//                     Functions
+	//                               Functions
 
 
 	// Clear screen
@@ -275,7 +272,7 @@ public:
 					// Spam
 
 					//Get char
-					char letter = chars[rand() % 117 + 1];
+					char letter = chars[rand() % 115 + 1];
 
 					// Print char
 					cout << letter;
@@ -492,6 +489,7 @@ public:
 	{
 		ShellExecute(0, 0, L"https://github.com/Totoro700/BotFlip/issues/new", 0, 0, SW_SHOW);
 	}
+
 };
 
 // Str to int
