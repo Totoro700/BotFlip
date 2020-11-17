@@ -31,6 +31,8 @@ public:
 	int a = 0;
 	int b = 0;
 	int numToSell = 0;
+	int modNumOne = 0;
+	int modNumTwo = 0;
 
 	// Char
 	char letter = NULL;
@@ -39,8 +41,6 @@ public:
 	// Float
 	float numOne = 0;
 	float numTwo = 0;
-	float modNumOne = 0;
-	float modNumTwo = 0;
 
 	// String
 	string uPass;
