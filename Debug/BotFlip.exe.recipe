@@ -5,7 +5,11 @@
       <FullPath>C:\Users\ianfr\source\repos\BotFlip\Debug\BotFlip.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
-  <ContentFiles />
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>C:\Users\ianfr\source\repos\BotFlip\html1.htm</FullPath>
+    </ContentFile>
+  </ContentFiles>
   <SatelliteDlls />
   <NonRecipeFileRefs />
 </Project>

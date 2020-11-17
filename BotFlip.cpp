@@ -1,4 +1,4 @@
-// Include
+ï»¿// Include
 #include <iostream>
 
 
@@ -31,8 +31,6 @@ public:
 	int a = 0;
 	int b = 0;
 	int numToSell = 0;
-	int modNumOne = 0;
-	int modNumTwo = 0;
 
 	// Char
 	char letter = NULL;
@@ -41,6 +39,8 @@ public:
 	// Float
 	float numOne = 0;
 	float numTwo = 0;
+	float modNumOne = 0;
+	float modNumTwo = 0;
 
 	// String
 	string uPass;
@@ -96,7 +96,6 @@ public:
 			cout << "arctan - Calculates arctan on a number - atan\n";
 			cout << "ver - Displays the version - ver\n";
 			cout << "spcfcVer - Displays the specific version - sVer\n";
-			cout << "changeLog - Displays the change log for the current version - sysCL\n";
 		}
 		catch (...)
 		{
@@ -202,6 +201,7 @@ public:
 		}
 	}
 
+	// Empty
 	void empty()
 	{
 		cout << "";
@@ -255,8 +255,8 @@ public:
 			'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
 			'`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', '[', ']', ';', ',', '.', '/', '~', '!', '@', '#', '$', '%', '^',
 			'&', '*', '(', ')', '_', '+', '{', '}', '|', ':', '<', '>', '?', 'Q', 'W', 'E', 'R', 'T', 'Y,', 'U', 'I', 'O', 'P', 'A', 'S', 'D',
-			'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', ' ', '\u0201', '\u00a1', '\u00a2', '\u00a3', '\u00a4', '\u00a5',
-			'\u00a6', '\u00a7', '', 'é', 'Ó', 'Ñ', '¼', 'Ì', 'ó', 'ÿ', 'ÿ', 'ƒ', 'Ä', 'Ê', 'ô', 'å', 'ÿ'
+			'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', 'Â§', '\u0201', '\u00a1', '\u00a2', '\u00a3', '\u00a4', '\u00a5',
+			'\u00a6', '\u00a7', 'Â', 'Ã©', 'Ã“', 'Ã‘', 'Â¼', 'ÃŒ', 'Ã³', 'Ã¿', 'Ã¿', 'Æ’', 'Ã„', 'ÃŠ', 'Ã´', 'Ã¥', 'Ã¿', 
 
 			};
 
@@ -270,7 +270,7 @@ public:
 					// Spam
 
 					//Get char
-					char letter = chars[rand() % 100 + 1];
+					char letter = chars[rand() % 117 + 1];
 
 					// Print char
 					cout << letter;
@@ -368,17 +368,6 @@ public:
 		cout << "C++ Bot. Version ";
 		cout << ver;
 		cout << "\n";
-	}
-
-	// Change Log
-	void sysCL()
-	{
-		// Change log
-		cout << "Change log for ";
-		cout << ver;
-		cout << "\n";
-		cout << "New fixes:\n";
-		cout << "Hello command\n";
 	}
 
 	//                              Trigonometric functions
@@ -610,10 +599,6 @@ int main()
 			case str2int("spcfcVer"):
 			case str2int("sVer"):
 				b.spcfcVer();
-				break;
-			case str2int("changeLog"):
-			case str2int("sysCL"):
-				b.sysCL();
 				break;
 			case str2int("sine"):
 			case str2int("sin"):
