@@ -46,8 +46,10 @@ public:
 	string uPass;
 	string data[10] = {};
 	string toStore;
-	string ver = "1.3.4o";
 	string tP;
+
+	// Version
+	string ver = "1.3.4o";
 
 
 	//                               Functions
@@ -521,10 +523,9 @@ int main()
 	cout << "\n";
 	cout << "----------------------------------------------------------------------------------\n";
 
+	// Wait 1 second
 	Sleep(1000);
 
-	// Clear
-	b.clear();
 
 	// Load
 	b.load();
