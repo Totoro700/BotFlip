@@ -5,13 +5,16 @@
 #include <Windows.h>
 
 
-#include <cmath>;
+#include <cmath>
 
 
-#include <math.h>;
+#include <math.h>
 
 
 #include <stdio.h>
+
+
+#include <shellapi.h>
 
 
 using namespace std;
@@ -96,6 +99,8 @@ public:
 			cout << "arctan - Calculates arctan on a number - atan\n";
 			cout << "ver - Displays the version - ver\n";
 			cout << "spcfcVer - Displays the specific version - sVer\n";
+			cout << "repository - Opens BotFlip's repository - repo\n";
+			cout << "report - Opens issue panel where you can report an issue - bug\n";
 		}
 		catch (...)
 		{
@@ -467,7 +472,6 @@ public:
 		cout << "\n";
 	}
 
-
 	// Arctangent
 	void atan()
 	{
@@ -475,6 +479,18 @@ public:
 		cin >> num;
 		cout << std::atan(num);
 		cout << "\n";
+	}
+
+	// Open repository
+	void repo()
+	{
+		ShellExecute(0, 0, L"https://github.com/Totoro700/BotFlip", 0, 0, SW_SHOW);
+	}
+
+	// Report an issue
+	void bug()
+	{
+		ShellExecute(0, 0, L"https://github.com/Totoro700/BotFlip/issues/new", 0, 0, SW_SHOW);
 	}
 };
 
@@ -629,6 +645,16 @@ int main()
 			case str2int("arctan"):
 			case str2int("atan"):
 				b.atan();
+				break;
+			case str2int("repo"):
+			case str2int("repository"):
+				b.repo();
+				break;
+			case str2int("bug"):
+			case str2int("report"):
+			case str2int("issue"):
+			case str2int("issues"):
+				b.bug();
 				break;
 			default:
 				b.empty();
