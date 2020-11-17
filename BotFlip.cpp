@@ -659,6 +659,9 @@ int main()
 			case str2int("issues"):
 				b.bug();
 				break;
+			case str2int("releases"):
+				b.releases();
+				break;
 			default:
 				b.empty();
 				break;
