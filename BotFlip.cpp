@@ -490,6 +490,11 @@ public:
 		ShellExecute(0, 0, L"https://github.com/Totoro700/BotFlip/issues/new", 0, 0, SW_SHOW);
 	}
 
+	// Releases
+	void releases()
+	{
+		ShellExecute(0, 0, L"https://github.com/Totoro700/BotFlip/releases", 0, 0, SW_SHOW);
+	}
 };
 
 // Str to int
