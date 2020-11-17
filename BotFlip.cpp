@@ -39,8 +39,8 @@ public:
 	char chars = NULL;
 
 	// Float
-	float numOne = 0;
-	float numTwo = 0;
+	double numOne = 0;
+	double numTwo = 0;
 
 	// String
 	string uPass;
