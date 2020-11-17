@@ -46,7 +46,7 @@ public:
 	string uPass;
 	string data[10] = {};
 	string toStore;
-	string ver = "1.3.4b";
+	string ver = "1.3.4o";
 	string tP;
 
 
