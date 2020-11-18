@@ -3,6 +3,33 @@
 <head>
 <meta charset='utf-8'>
 <title>BotFlip</title>
+<style>
+#btnRprt{
+  transition-duration:1s;
+  color:#F00;
+  background-color:#FFF;
+  padding:5px;
+  margin:10px;
+}
+  
+#btnRprt:hover{
+  color:#FFF;
+  background-color:#F00;
+}
+  
+.btn{
+  transition-duration:1s;
+  color:#0FF;
+  background-color:#FFF;
+  padding:5px;
+  margin:10px;
+}
+  
+.btn:hover{
+  color:#FFF;
+  background-color:#0FF;
+}
+</style>
 </head>
 <body style='background-color:#CCC;text-align:center;font-family:Ink Free, Consolas, Sans Serif;'>
 <h1>BotFlip</h1>
@@ -22,6 +49,14 @@ Click
 <a href='Debug/BotFlip.exe'>here</a>
 <br>
 <br>
+<br>
+Problems:<br>
+<button id="btnRprt" onclick="window.open('https://github.com/Totoro700/BotFlip/issues/new')" style="border:3 px solid black;border-radius:4px;">Click here</button>
+<br>
+<br>
+<br>
+Releases:<br>
+<button class="btn" onclick="window.open('https://github.com/Totoro700/BotFlip/releases')" style="border:3 px solid black;border-radius:4px;">Click here</button>
 </p>
 </body>
 </html>
