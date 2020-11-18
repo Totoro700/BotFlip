@@ -537,35 +537,55 @@ public:
 	{
 		cout << "Debug started . . .\n";
 		Sleep(5000);
+
+		// Check if it is a beta version
 		if (ver.find("b"))
 		{
+			// May have an issue
 			cout << "This program may have an issue, do you want to report it?\nY = Yes | N = No\n";
+
+			// Create variable
 			string report;
+
+			// Get input
 			cin >> report;
+
+			// Check
 			if (report == "Y" || report == "y")
 			{
+				// Report bug 
 				bug();
 			}
 			else if (report == "N" || report == "n")
 			{
+				// Check for updates
 				cout << "Do you want to check for updates?\nY = yes | N = No\n";
+
+				// Create variable
 				string update;
+
+				// Get input
 				cin >> update;
+
+				// Check
 				if (update == "Y" || update == "y")
 				{
+					// Open releases page on Github
 					releases();
 				}
 				else if (update == "N" || update == "n")
 				{
-					
+					// Do nothing
 				}
 				else
 				{
+					// Not valid answer
 					cout << "That\'s is not a valid answer!\n";
 				}
 			}
 			else
 			{
+				// Not valid answer
 				cout << "That\'s is not a valid answer!\n";
 			}
 		}
