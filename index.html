@@ -4,7 +4,7 @@
 <meta charset='utf-8'>
 <title>BotFlip</title>
 <style>
-.btn{
+#btnRprt{
   transition-duration:1s;
   color:#F00;
   background-color:#FFF;
@@ -12,9 +12,22 @@
   margin:10px;
 }
   
-.btn:hover{
+#btnRprt:hover{
   color:#FFF;
   background-color:#F00;
+}
+  
+.btn{
+  transition-duration:1s;
+  color:#0FF;
+  background-color:#FFF;
+  padding:5px;
+  margin:10px;
+}
+  
+.btn:hover{
+  color:#FFF;
+  background-color:#0FF;
 }
 </style>
 </head>
@@ -38,7 +51,12 @@ Click
 <br>
 <br>
 Problems:<br>
-<button class="btn" onclick="window.open('https://github.com/Totoro700/BotFlip/issues/new')" style="border:3 px solid black;border-radius:4px;">Click here</button>
+<button id="btn" onclick="window.open('https://github.com/Totoro700/BotFlip/issues/new')" style="border:3 px solid black;border-radius:4px;">Click here</button>
+<br>
+<br>
+<br>
+Releases:<br>
+<button class="btn" onclick="window.open('https://github.com/Totoro700/BotFlip/releases')" style="border:3 px solid black;border-radius:4px;">Click here</button>
 </p>
 </body>
 </html>
