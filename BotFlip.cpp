@@ -1,16 +1,14 @@
 ﻿// Include
-// Iostream
 #include <iostream>;
 
-// Windows
+
 #include <Windows.h>;
 
-// For math
-// Cmath
+
 #include <cmath>;
 
-// Math.h
-#include <math.h>
+
+#include <math.h>;
 
 
 // Std
@@ -53,7 +51,6 @@ public:
 	string ver = "1.3.4o";
 
 
-	//                               Functions
 
 
 	// Clear screen
@@ -62,6 +59,7 @@ public:
 		system("CLS");
 	}
 
+	// Error
 	void e()
 	{
 		cout << "Something went wrong! Please try again\n";
@@ -498,6 +496,39 @@ public:
 	{
 		ShellExecute(0, 0, L"https://github.com/Totoro700/BotFlip/releases", 0, 0, SW_SHOW);
 	}
+
+	// Cmd
+	void cmd()
+	{
+		cout << "The thing you are typing in is cmd!\n";
+	}
+
+	// Secant
+	void sec()
+	{
+		cout << "Number?\n";
+		cin >> num;
+		cout << 1 / cos(num);
+		cout << "\n";	
+	}
+
+	// Cosecant
+	void csc()
+	{
+		cout << "Number?\n";
+		cin >> num;
+		cout << 1 / sin(num);
+		cout << "\n";
+	}
+
+	// Cotangent
+	void cot()
+	{
+		cout << "Number?\n";
+		cin >> num;
+		cout << 1 / tan(num);
+		cout << "\n";
+	}
 };
 
 // Str to int
@@ -663,6 +694,19 @@ int main()
 				break;
 			case str2int("releases"):
 				b.releases();
+				break;
+			case str2int("cmd"):
+			case str2int("cmd.exe"):
+				b.cmd();
+				break;
+			case str2int("secant"):
+				b.sec();
+				break;
+			case str2int("cosecant"):
+				b.csc();
+				break;
+			case str2int("cotangent"):
+				b.cot();
 				break;
 			default:
 				b.empty();
