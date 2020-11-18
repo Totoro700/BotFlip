@@ -48,7 +48,7 @@ public:
 	string tP;
 
 	// Version
-	string ver = "1.3.4o";
+	string ver = "1.3.6b";
 
 
 
