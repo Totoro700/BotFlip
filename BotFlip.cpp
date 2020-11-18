@@ -48,7 +48,7 @@ public:
 	string tP;
 
 	// Version
-	string ver = "1.3.6b";
+	string ver = "1.3.8b";
 
 
 
@@ -99,6 +99,8 @@ public:
 			cout << "spcfcVer - Displays the specific version - sVer\n";
 			cout << "repository - Opens BotFlip's repository - repo\n";
 			cout << "report - Opens issue panel where you can report an issue - bug\n";
+			cout << "releases - Opens all the releases\n";
+			cout << "debug - Debug\n";
 		}
 		catch (...)
 		{
@@ -529,6 +531,45 @@ public:
 		cout << 1 / tan(num);
 		cout << "\n";
 	}
+
+	// Debug
+	void debug()
+	{
+		cout << "Debug started . . .\n";
+		Sleep(5000);
+		if (ver.find("b"))
+		{
+			cout << "This program may have an issue, do you want to report it?\nY = Yes | N = No\n";
+			string report;
+			cin >> report;
+			if (report == "Y" || report == "y")
+			{
+				bug();
+			}
+			else if (report == "N" || report == "n")
+			{
+				cout << "Do you want to check for updates?\nY = yes | N = No\n";
+				string update;
+				cin >> update;
+				if (update == "Y" || update == "y")
+				{
+					releases();
+				}
+				else if (update == "N" || update == "n")
+				{
+					
+				}
+				else
+				{
+					cout << "That\'s is not a valid answer!\n";
+				}
+			}
+			else
+			{
+				cout << "That\'s is not a valid answer!\n";
+			}
+		}
+	}
 };
 
 // Str to int
@@ -707,6 +748,9 @@ int main()
 				break;
 			case str2int("cotangent"):
 				b.cot();
+				break;
+			case str2int("debug"):
+				b.debug();
 				break;
 			default:
 				b.empty();
