@@ -47,6 +47,12 @@ Here is some examples of the versions:
 
 One image, [icon.ico](https://github.com/Totoro700/icon.ico), it's for the icon of [BotFlip](https://github.com/Totoro700/BotFlip), not under copyright
 
+---
+
+## Contributing
+
+Read [here](https://github.com/Totoro700/BotFlip/CONTRIBUTING.md)
+
 
 ---
 
