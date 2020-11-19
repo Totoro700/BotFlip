@@ -6,6 +6,19 @@ C++ program that you can use as a tool, calculator, or just something to look at
 
 `while (0 == 0){deleteBordom();}`
 
+Jump to:
+
+[Releases meta](https://github.com/Totoro700/BotFlip/blob/main/README.md#release-meta)
+
+[Languages](https://github.com/Totoro700/BotFlip/blob/main/README.md#languages)
+
+[Branches](https://github.com/Totoro700/BotFlip/blob/main/README.md#branches)
+
+[Images](https://github.com/Totoro700/BotFlip/blob/main/README.md#images)
+
+[License](https://github.com/Totoro700/BotFlip/blob/main/README.md#license)
+
+
 ---
 
 ## Release meta
