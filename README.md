@@ -56,20 +56,6 @@ One image, [icon.ico](https://github.com/Totoro700/icon.ico), it's for the icon 
 None, use it freely, but please don't try to copy [this](https://github.com/Totoro700/BotFlip) (this means every single file) and say it is yours.
 
 
-__________________
-|
-|
-|
-|
-|
-|
-|
-|                          |            |
-|                       ---|---      ---|---
-|_________________         |            |
-
-
-
 
 ---
 
