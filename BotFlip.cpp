@@ -801,9 +801,6 @@ int main()
 			case str2int("debug"):
 				b.debug();
 				break;
-			case str2int("edit"):
-				b.createFile();
-				break;
 			default:
 				b.empty();
 				break;
