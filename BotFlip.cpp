@@ -1,28 +1,14 @@
 ﻿// Include
 #include <iostream>;
-
-
 #include <Windows.h>;
-
-
 #include <cmath>;
-
-
 #include <math.h>;
-
-
 #include <shellapi.h>;
-
-
 #include <string>;
-
-
 #include <fstream>;
-
 
 // Std
 using namespace std;
-
 
 // Class BotFlip
 class BotFlip 
@@ -608,6 +594,7 @@ public:
 			}
 		}
 		else {
+			// No problems
 			cout << "Everything seems great!\n";
 		}
 	}
@@ -624,8 +611,6 @@ constexpr unsigned int str2int(const char* str, int h = 0)
 {
 	return !str[h] ? 5381 : (str2int(str, h + 1) * 33) ^ str[h];
 }
-
-
 
 
 // Main
@@ -649,16 +634,12 @@ int main()
 	// Wait 1 second
 	Sleep(1000);
 
-
 	// Load
 	b.load();
-
-	ofstream text("text.txt");
 
 	// Main loop
 	while (0 == 0)
 	{
-
 		// Get input
 		cin >> cmd;
 
