@@ -149,6 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\Downloads\Chrome Downloads\favicon.ico" />
+    <Image Include="icon.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

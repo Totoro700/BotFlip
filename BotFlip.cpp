@@ -11,8 +11,18 @@
 #include <math.h>;
 
 
+#include <shellapi.h>;
+
+
+#include <string>;
+
+
+#include <fstream>;
+
+
 // Std
 using namespace std;
+
 
 // Class BotFlip
 class BotFlip 
@@ -48,7 +58,7 @@ public:
 	string tP;
 
 	// Version
-	string ver = "1.3.8b";
+	string ver = "1.3.9b";
 
 
 
@@ -100,7 +110,8 @@ public:
 			cout << "repository - Opens BotFlip's repository - repo\n";
 			cout << "report - Opens issue panel where you can report an issue - bug\n";
 			cout << "releases - Opens all the releases\n";
-			cout << "debug - Debug\n";
+			cout << "debug - Basic debug\n";
+			cout << "edit - Opens a text file and writes things into it\n";
 		}
 		catch (...)
 		{
@@ -532,11 +543,19 @@ public:
 		cout << "\n";
 	}
 
+	// Debug test 
+	// Return int, collect int input
+	int debugInt(int num)
+	{
+		return num * 3;
+	}
+
 	// Debug
 	void debug()
 	{
 		cout << "Debug started . . .\n";
-		Sleep(5000);
+		Sleep(100);
+		cout << "Checking for problems . . .\n";
 
 		// Check if it is a beta version
 		if (ver.find("b"))
@@ -553,7 +572,7 @@ public:
 			// Check
 			if (report == "Y" || report == "y")
 			{
-				// Report bug 
+				// Report bug
 				bug();
 			}
 			else if (report == "N" || report == "n")
@@ -589,9 +608,10 @@ public:
 				cout << "That\'s is not a valid answer!\n";
 			}
 		}
+		else {
+			cout << "Everything seems great!\n";
+		}
 	}
-
-	
 
 };
 
@@ -600,6 +620,10 @@ constexpr unsigned int str2int(const char* str, int h = 0)
 {
 	return !str[h] ? 5381 : (str2int(str, h + 1) * 33) ^ str[h];
 }
+
+
+
+
 
 // Main
 int main()
@@ -625,6 +649,8 @@ int main()
 
 	// Load
 	b.load();
+
+	ofstream text("text.txt");
 
 	// Main loop
 	while (0 == 0)
@@ -774,6 +800,9 @@ int main()
 				break;
 			case str2int("debug"):
 				b.debug();
+				break;
+			case str2int("edit"):
+				b.createFile();
 				break;
 			default:
 				b.empty();
