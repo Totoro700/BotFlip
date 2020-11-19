@@ -111,7 +111,6 @@ public:
 			cout << "report - Opens issue panel where you can report an issue - bug\n";
 			cout << "releases - Opens all the releases\n";
 			cout << "debug - Basic debug\n";
-			cout << "edit - Opens a text file and writes things into it\n";
 		}
 		catch (...)
 		{
@@ -286,7 +285,7 @@ public:
 					// Spam
 
 					//Get char
-					char letter = chars[rand() % 115 + 1];
+					char letter = chars[rand() % 116 + 1];
 
 					// Print char
 					cout << letter;
@@ -613,6 +612,11 @@ public:
 		}
 	}
 
+	// Int to str
+	string int2str(int toStr)
+	{
+		return to_string(toStr);
+	}
 };
 
 // Str to int
@@ -620,7 +624,6 @@ constexpr unsigned int str2int(const char* str, int h = 0)
 {
 	return !str[h] ? 5381 : (str2int(str, h + 1) * 33) ^ str[h];
 }
-
 
 
 
