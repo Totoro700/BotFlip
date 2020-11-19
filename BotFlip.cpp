@@ -95,8 +95,8 @@ public:
 			cout << "spcfcVer - Displays the specific version - sVer\n";
 			cout << "repository - Opens BotFlip's repository - repo\n";
 			cout << "report - Opens issue panel where you can report an issue - bug\n";
-			cout << "releases - Opens all the releases\n";
-			cout << "debug - Basic debug\n";
+			cout << "releases - Opens all the releases - release\n";
+			cout << "debug - Basic debug - debug\n";
 		}
 		catch (...)
 		{
@@ -767,6 +767,7 @@ int main()
 				b.bug();
 				break;
 			case str2int("releases"):
+			case str2int("release"):
 				b.releases();
 				break;
 			case str2int("cmd"):
