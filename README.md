@@ -77,7 +77,7 @@ Read [here](https://github.com/Totoro700/BotFlip/blob/main/HELP.md)
 
 ## License
 
-None, use it freely, but please don't try to copy [this](https://github.com/Totoro700/BotFlip) (this means every single file) and say it is yours.
+None
 
 
 
