@@ -41,6 +41,23 @@ Please do _not_ make your code look messy
 
 Example:
 
+Good:
+
+
+// Function for adding two numbers
+
+int foo(int numOne, int numTwo)
+
+{
+
+  return numOne + numTwo;
+  
+}
+
+
+
+Bad:
+
 int foo(int numOne,int numTwo){return num+numTwo;}
 
 Try not to use multi-line comments. (You can use them if you want though)
