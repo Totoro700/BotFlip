@@ -600,6 +600,7 @@ public:
 		cin >> toWrite;
 		text.open("text.txt", ios_base::app);
 		text << toWrite + "\n";
+		text.close();
 		cout << "Updated file!\n";
 	}
 
@@ -612,6 +613,7 @@ public:
 		cin >> toWrite;
 		text.open("text.txt");
 		text << toWrite + "\n";
+		text.close();
 		cout << "Updated file!\n";
 	}
 
@@ -621,6 +623,15 @@ public:
 		ofstream text;
 		text.open("text.txt");
 		text << " ";
+	}
+
+	// Log command
+	void log(string cmd)
+	{
+		ofstream cmd_log;
+		cmd_log.open("cmd_log.txt", ios_base::app);
+		cmd_log << cmd+"\n";
+		cmd_log.close();
 	}
 
 	// Int to str
@@ -661,11 +672,15 @@ int main()
 	// Load
 	b.load();
 
+
 	// Main loop
 	while (0 == 0)
 	{
 		// Get input
 		cin >> cmd;
+
+		// Log
+		b.log(cmd);
 
 		// Check for commands
 		switch (str2int(cmd))
