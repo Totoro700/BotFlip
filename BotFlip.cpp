@@ -495,12 +495,6 @@ public:
 		ShellExecute(0, 0, L"https://github.com/Totoro700/BotFlip/releases", 0, 0, SW_SHOW);
 	}
 
-	// Cmd
-	void cmd()
-	{
-		cout << "The thing you are typing in is cmd!\n";
-	}
-
 	// Secant
 	void sec()
 	{
@@ -768,10 +762,6 @@ int main()
 				break;
 			case str2int("releases"):
 				b.releases();
-				break;
-			case str2int("cmd"):
-			case str2int("cmd.exe"):
-				b.cmd();
 				break;
 			case str2int("secant"):
 				b.sec();
