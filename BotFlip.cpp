@@ -47,8 +47,6 @@ public:
 	string ver = "1.3.9b";
 
 
-
-
 	// Clear screen
 	void clear()
 	{
