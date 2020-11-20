@@ -1,10 +1,21 @@
 # [BotFlip](https://github.com/Totoro700/BotFlip)
 
+<br />
+
 ---
+
+<br />
 
 C++ program that you can use as a tool, calculator, or just something to look at when bored
 
-`while (0 == 0){deleteBordom();}`
+
+`
+while (0 == 0)
+{
+deleteBordom();
+}
+`
+
 
 Jump to:
 
@@ -21,7 +32,9 @@ Jump to:
 
 ---
 
+
 ## Release meta
+
 
 [v1.3.1](https://github.com/Totoro700/BotFlip/releases/tag/1.3.1) - First recorded version
 
@@ -81,5 +94,4 @@ None
 
 
 
----
 
