@@ -359,7 +359,7 @@ public:
 	void version()
 	{
 		// Version
-		cout << "C++ Bot. Version 1.3\n";
+		cout << "C++ Bot. Version 1.9\n";
 	}
 
 	// Specific version
@@ -495,12 +495,6 @@ public:
 		ShellExecute(0, 0, L"https://github.com/Totoro700/BotFlip/releases", 0, 0, SW_SHOW);
 	}
 
-	// Cmd
-	void cmd()
-	{
-		cout << "The thing you are typing in is cmd!\n";
-	}
-
 	// Secant
 	void sec()
 	{
@@ -597,6 +591,38 @@ public:
 			// No problems
 			cout << "Everything seems great!\n";
 		}
+	}
+
+	// File write (fwrite)
+	void fwrite()
+	{
+		ofstream text;
+		string toWrite;
+		cout << "To Write?\n";
+		cin >> toWrite;
+		text.open("text.txt", ios_base::app);
+		text << toWrite + "\n";
+		cout << "Updated file!\n";
+	}
+
+	// File overwrite (fowrite)
+	void fowrite()
+	{
+		ofstream text;
+		string toWrite;
+		cout << "To Write?\n";
+		cin >> toWrite;
+		text.open("text.txt");
+		text << toWrite + "\n";
+		cout << "Updated file!\n";
+	}
+
+	// Clear file (fclear)
+	void fclear()
+	{
+		ofstream text;
+		text.open("text.txt");
+		text << " ";
 	}
 
 	// Int to str
@@ -770,10 +796,6 @@ int main()
 			case str2int("release"):
 				b.releases();
 				break;
-			case str2int("cmd"):
-			case str2int("cmd.exe"):
-				b.cmd();
-				break;
 			case str2int("secant"):
 				b.sec();
 				break;
@@ -786,6 +808,12 @@ int main()
 			case str2int("debug"):
 				b.debug();
 				break;
+			case str2int("fwrite"):
+				b.fwrite();
+				break;
+			case str2int("fowrite"):
+			case str2int("fclear"):
+				b.fclear();
 			default:
 				b.empty();
 				break;
