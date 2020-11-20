@@ -44,7 +44,7 @@ public:
 	string tP;
 
 	// Version
-	string ver = "1.3.9b";
+	string ver = "1.4.0b";
 
 
 	// Clear screen
