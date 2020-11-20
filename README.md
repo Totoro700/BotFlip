@@ -1,10 +1,21 @@
 # [BotFlip](https://github.com/Totoro700/BotFlip)
 
+<br />
+
 ---
+
+<br />
 
 C++ program that you can use as a tool, calculator, or just something to look at when bored
 
-`while (0 == 0){deleteBordom();}`
+
+`
+while (0 == 0)
+{
+deleteBordom();
+}
+`
+
 
 Jump to:
 
@@ -21,16 +32,18 @@ Jump to:
 
 ---
 
+
 ## Release meta
 
-[v1.3.1](https://github.com/Totoro700/BotFlip/releases/tag/1.3.1) - First recorded version
+
+[v1.3.1](https://github.com/Totoro700/BotFlip/releases/tag/1.3.1 "Version 1.3.1") - First recorded version
 
 To find a speific release, click on the branch list, click tags, and search up version numbers
 
 Here is some examples of the versions:
 
 
-[1.3.1](https://github.com/Totoro700/BotFlip/releases/tag/1.3.1) - [Version 1.3.1](https://github.com/releases/)
+[1.3.1](https://github.com/Totoro700/BotFlip/releases/tag/1.3.1 "Version 1.3.1") - [Version 1.3.1](https://github.com/releases/tag/1.3.1 "Version 1.3.1")
 
 1.3.1-beta - [Version 1.3.1](https://github.com/Totoro700/BotFlip/releases/tag/1.3.1) beta
 
@@ -52,34 +65,33 @@ Here is some examples of the versions:
 
 ## Branches
 
-[main](https://github.com/Totoro700/BotFlip/tree/main) - Just [main](https://github.com/Totoro700/BotFlip/tree/main), the final released version
+[main](https://github.com/Totoro700/BotFlip/tree/main "Main branch") - Just [main](https://github.com/Totoro700/BotFlip/tree/main), the final released version
 
 ---
 
 ## Images
 
-One image, [icon.ico](https://github.com/Totoro700/icon.ico), it's for the icon of [BotFlip](https://github.com/Totoro700/BotFlip), not under copyright
+One image, [icon.ico](https://github.com/Totoro700/icon.ico "Icon (icon.ico)"), it's for the icon of [BotFlip](https://github.com/Totoro700/BotFlip), not under copyright
 
 ---
 
 ## Contributing
 
-Read [here](https://github.com/Totoro700/BotFlip/CONTRIBUTING.md)
+Read [here](https://github.com/Totoro700/BotFlip/CONTRIBUTING.md "Contributing markdown file")
 
 
 ---
 
 ## Help
 
-Read [here](https://github.com/Totoro700/BotFlip/blob/main/HELP.md)
+Read [here](https://github.com/Totoro700/BotFlip/blob/main/HELP.md "Help markdown file")
 
 ---
 
 ## License
 
-None, use it freely, but please don't try to copy [this](https://github.com/Totoro700/BotFlip) (this means every single file) and say it is yours.
+None
 
 
 
----
 
