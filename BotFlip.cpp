@@ -357,7 +357,7 @@ public:
 	void version()
 	{
 		// Version
-		cout << "C++ Bot. Version 1.9\n";
+		cout << "C++ Bot. Version 1.4\n";
 	}
 
 	// Specific version
