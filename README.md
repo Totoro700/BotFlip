@@ -69,6 +69,11 @@ Read [here](https://github.com/Totoro700/BotFlip/CONTRIBUTING.md)
 
 ---
 
+## Help
+
+Read [here](https://github.com/Totoro700/BotFlip/blob/main/HELP.md)
+
+---
 
 ## License
 
