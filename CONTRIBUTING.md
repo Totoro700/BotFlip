@@ -35,7 +35,7 @@ When naming variables, try not to put dashes and underscores. Instead, use Camel
 
 When naming classes, use Pascal case (ex.: PascalCaseClass)
 
-When naming function, it is up to you! (I prefer Camel case though)
+When naming functions, it is up to you! (I prefer Camel case though)
 
 Please do _not_ make your code look messy
 
