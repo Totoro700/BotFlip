@@ -808,3 +808,5 @@ cls
 help
 sin
 ver
+Hi
+help

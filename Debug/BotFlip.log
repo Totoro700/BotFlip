@@ -6,10 +6,11 @@ C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(5,10): warning C4067: unexpected
 C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(7,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(8,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(257,75): warning C4566: character represented by universal-character-name '\u0201' cannot be represented in the current code page (1252)
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(220,18): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(221,18): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(258,24): warning C4838: conversion from 'int' to 'char' requires a narrowing conversion
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(260,1): warning C4305: 'initializing': truncation from 'int' to 'char'
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(258,24): warning C4309: 'initializing': truncation of constant value
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(266,75): warning C4566: character represented by universal-character-name '\u0201' cannot be represented in the current code page (1252)
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(229,18): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(230,18): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(267,24): warning C4838: conversion from 'int' to 'char' requires a narrowing conversion
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(269,1): warning C4305: 'initializing': truncation from 'int' to 'char'
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(267,24): warning C4309: 'initializing': truncation of constant value
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(595,1): warning C4102: 'std': unreferenced label
   BotFlip.vcxproj -> C:\Users\ianfr\source\repos\BotFlip\Debug\BotFlip.exe

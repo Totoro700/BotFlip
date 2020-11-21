@@ -10,6 +10,14 @@
 // Std
 using namespace std;
 
+
+// Str to int
+constexpr unsigned int str2int(const char* str, int h = 0)
+{
+	return !str[h] ? 5381 : (str2int(str, h + 1) * 33) ^ str[h];
+}
+
+
 // Class BotFlip
 class BotFlip 
 {
@@ -95,6 +103,9 @@ public:
 			cout << "report - Opens issue panel where you can report an issue - bug\n";
 			cout << "releases - Opens all the releases - release\n";
 			cout << "debug - Basic debug - debug\n";
+			cout << "fwrite - File write, opens a file a writes some text into it\n";
+			cout << "fowrite - File overwrite, opens a file and overwrites some text into it\n";
+			cout << "fclear - File clear, opens a file and clears all the contents in the file\n";
 		}
 		catch (...)
 		{
@@ -420,25 +431,6 @@ public:
 		}
 		clear();
 	}
-	// Text
-	void print(string msg)
-	{
-		int j = 1;
-		while (msg[j] != NULL)
-		{
-			cout << msg[j];
-			Sleep(50);
-			j++;
-		};
-	}
-
-	// Check text
-	void checkText()
-	{
-		cout << "To print?\n";
-		cin >> tP;
-		print(tP);
-	}
 	
 	// Echo
 	void echo()
@@ -595,11 +587,23 @@ public:
 	void fwrite()
 	{
 		ofstream text;
+
+		// Create toWrite string variable
 		string toWrite;
+
+		// Ask
 		cout << "To Write?\n";
-		cin >> toWrite;
+		// Get input
+		std::getline(std::cin, toWrite);
+
+		
+		// Open file
 		text.open("text.txt", ios_base::app);
-		text << toWrite + "\n";
+
+		// Update file
+		text << toWrite;
+
+		// Close file
 		text.close();
 		cout << "Updated file!\n";
 	}
@@ -621,16 +625,29 @@ public:
 	void fclear()
 	{
 		ofstream text;
+
+		// Open text.txt
 		text.open("text.txt");
+
+		// Clear
 		text << " ";
+
+		// Close text.txt
+		text.close();
 	}
 
 	// Log command
 	void log(string cmd)
 	{
 		ofstream cmd_log;
+		
+		// Open log
 		cmd_log.open("cmd_log.txt", ios_base::app);
+
+		// Update log
 		cmd_log << cmd+"\n";
+
+		// Close log
 		cmd_log.close();
 	}
 
@@ -640,12 +657,6 @@ public:
 		return to_string(toStr);
 	}
 };
-
-// Str to int
-constexpr unsigned int str2int(const char* str, int h = 0)
-{
-	return !str[h] ? 5381 : (str2int(str, h + 1) * 33) ^ str[h];
-}
 
 
 // Main
@@ -776,9 +787,6 @@ int main()
 			case str2int("tangent"):
 			case str2int("tan"):
 				b.tangent();
-				break;
-			case str2int("text"):
-				b.checkText();
 				break;
 			case str2int("echo"):
 				b.echo();
