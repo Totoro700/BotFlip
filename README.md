@@ -29,6 +29,7 @@ Jump to:
 
 [License](https://github.com/Totoro700/BotFlip/blob/main/README.md#license)
 
+[Install](https://github.com/Totoro700/BotFlip/blob/main/README.md#install)
 
 ---
 
@@ -36,18 +37,18 @@ Jump to:
 ## Release meta
 
 
-[v1.3.1](https://github.com/Totoro700/BotFlip/releases/tag/1.3.1 "Version 1.3.1") - First recorded version
+[v1.4.0](https://github.com/Totoro700/BotFlip/releases/tag/1.4.0 "Version 1.4.0") - First recorded version
 
 To find a speific release, click on the branch list, click tags, and search up version numbers
 
 Here is some examples of the versions:
 
 
-[1.3.1](https://github.com/Totoro700/BotFlip/releases/tag/1.3.1 "Version 1.3.1") - [Version 1.3.1](https://github.com/releases/tag/1.3.1 "Version 1.3.1")
+1.4.0 - Version 1.3.1
 
-1.3.1-beta - [Version 1.3.1](https://github.com/Totoro700/BotFlip/releases/tag/1.3.1) beta
+1.4.0-beta - Version 1.4.0 beta
 
-1.3.1-mnr - Minor [version 1.3.1](https://github.com/Totoro700/BotFlip/releases/tag/1.3.1)
+1.4.0-mnr - Minor version 1.4.0
 
 ---
 
@@ -88,10 +89,17 @@ Read [here](https://github.com/Totoro700/BotFlip/blob/main/HELP.md "Help markdow
 
 ---
 
+## Install
+
+Read [here](https://github.com/Totoro700/BotFlip/blob/main/INSTALL.md)
+
+---
+
 ## License
 
 None
 
 
+---
 
-
+Jump to top ↑ : [jump](#)
