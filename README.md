@@ -95,7 +95,7 @@ Read [here](https://github.com/Totoro700/BotFlip/blob/main/INSTALL.md)
 
 ---
 
-## License
+## [License](#)
 
 None
 
