@@ -58,10 +58,6 @@ Here is some examples of the versions:
 
 [C](https://github.com/Totoro700/BotFlip/search?l=C) - Resources
 
-[HTML](https://github.com/Totoro700/BotFlip/search?l=HTML) - [Website](https://totoro700.github.io/BotFlip) to download files
-
-[CSS](https://github.com/Totoro700/BotFlip/search?l=CSS) - Styling for [website](https://totoro700.github.io/BotFlip)
-
 ---
 
 ## Branches
