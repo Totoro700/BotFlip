@@ -29,6 +29,7 @@ Jump to:
 
 [License](https://github.com/Totoro700/BotFlip/blob/main/README.md#license)
 
+[Install](https://github.com/Totoro700/BotFlip/blob/main/README.md#install)
 
 ---
 
@@ -85,6 +86,12 @@ Read [here](https://github.com/Totoro700/BotFlip/CONTRIBUTING.md "Contributing m
 ## Help
 
 Read [here](https://github.com/Totoro700/BotFlip/blob/main/HELP.md "Help markdown file")
+
+---
+
+## Install
+
+Read [here](https://github.com/Totoro700/BotFlip/blob/main/INSTALL.md)
 
 ---
 
