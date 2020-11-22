@@ -9,7 +9,7 @@ void install()
 }
 ```
 
-Windows only, sorry Mac users, I don't have executable file for Mac, you can run the [C++ script](https://github.com/Totoro700/BotFlip/blob/main/BotFlip.cpp)
+Windows only, sorry Mac users, I don't have executable file for Mac, but you can run the [C++ script](https://github.com/Totoro700/BotFlip/blob/main/BotFlip.cpp)
 
 ---
 
