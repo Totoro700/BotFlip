@@ -532,19 +532,13 @@ public:
 		cout << "\n";
 	}
 
-	// Debug test 
-	// Return int, collect int input
-	int debugInt(int num)
-	{
-		return num * 3;
-	}
-
 	// Debug
 	void debug()
 	{
 		cout << "Debug started . . .\n";
 		Sleep(100);
 		cout << "Checking for problems . . .\n";
+		Sleep(2000);
 
 		// Check if it is a beta version
 		if (ver.find("b"))
@@ -596,10 +590,6 @@ public:
 				// Not valid answer
 				cout << "That\'s is not a valid answer!\n";
 			}
-		}
-		else {
-			// No problems
-			cout << "Everything seems great!\n";
 		}
 	}
 
