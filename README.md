@@ -97,11 +97,9 @@ Read [here](https://github.com/Totoro700/BotFlip/blob/main/LICENSE.md)
 
 Or:
 
-### License
-
 ---
 
-#### MIT License
+### **MIT License**
 
 Copyright (c) 2020 Totoro700
 
