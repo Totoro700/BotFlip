@@ -94,6 +94,7 @@ public:
 		{
 
 			// Help
+			cout << "--------------------HELP--------------------\n";
 			cout << "Format: [command name] - [description] - [id]\n";
 			cout << "help - Displays this help message - hlp\n";
 			cout << "playCoins - Play for a chance to get coins! - plyCns\n";
@@ -103,7 +104,7 @@ public:
 			cout << "sell - Sell the paper you have - sll\n";
 			cout << "steal - Steal - stl\n";
 			cout << "givemecoffee - Gives you coffee - gvmcff\n";
-			cout << "cls - Clears all the text on the screen - cls\n";
+			cout << "cls - Clears all the text on the screen - clear\n";
 			cout << "spam - Program spams - spm\n";
 			cout << "exit - Exits this program - ext\n";
 			cout << "add - Adds two numbers - add\n";
@@ -126,6 +127,12 @@ public:
 			cout << "fwrite - File write, opens a file a writes some text into it\n";
 			cout << "fowrite - File overwrite, opens a file and overwrites some text into it\n";
 			cout << "fclear - File clear, opens a file and clears all the contents in the file\n";
+			cout << "color-green - Sets the text color to green (default)\n";
+			cout << "color-red - Sets the text color to red\n";
+			cout << "color-white - Sets the text color to white\n";
+			cout << "color-blue - Sets the text color to blue (not recommended)\n";
+			cout << "\n";
+			cout << "-------------------------------------------------\n";
 		}
 		catch (...)
 		{
@@ -237,7 +244,7 @@ public:
 		cout << "";
 	}
 
-	// hack
+	// Hack
 	void hack()
 	{
 		// Hack			
@@ -245,7 +252,7 @@ public:
 
 		// Get input
 		cin >> uPass;
-		if (uPass == "C++")
+		if (uPass == "BotFlip123-C++")
 		{
 			// Correct
 			coins = coins + 9999999999;
@@ -672,12 +679,44 @@ public:
 	{
 		return to_string(toStr);
 	}
+	
+	// Green
+	void green()
+	{
+		system("Color 0A");
+		cout << "Successfully changed the text color to green!\n";
+	}
+
+	// Red
+	void red()
+	{
+		system("Color 0C");
+		cout << "Successfully changed the text color to red!\n";
+	}
+
+	// White
+	void white()
+	{
+		system("Color 0F");
+		cout << "Successfully changed the text color to white!\n";
+	}
+
+	// Blue
+	void blue()
+	{
+		system("Color 01");
+		cout << "Successfully changed the text color to blue!\n";
+	}
 };
+
 
 
 // Main
 int main()
 {
+
+	system("Color 0A");
+
 	// Include class as b
 	BotFlip b;
 
@@ -698,7 +737,6 @@ int main()
 
 	// Load
 	b.load();
-
 
 	// Main loop
 	while (0 == 0)
@@ -762,6 +800,7 @@ int main()
 			case str2int("cls"):
 			case str2int("CLS"):
 			case str2int("Cls"):
+			case str2int("clear"):
 				b.clear();
 				break;
 			case str2int("spam"):
@@ -851,6 +890,18 @@ int main()
 			case str2int("fowrite"):
 			case str2int("fclear"):
 				b.fclear();
+			case str2int("color-green"):
+				b.green();
+				break;
+			case str2int("color-red"):
+				b.red();
+				break;
+			case str2int("color-white"):
+				b.white();
+				break;
+			case str2int("color-blue"):
+				b.blue();
+				break;
 			default:
 				b.empty();
 				break;

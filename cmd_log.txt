@@ -40,3 +40,14 @@ fwrite
 fwrite
 qwerty
 test
+help
+help
+help
+help
+color-green
+color-red
+color-green
+color-white
+color-blue
+color-breen
+color-green
