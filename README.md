@@ -9,12 +9,12 @@
 C++ program that you can use as a tool, calculator, or just something to look at when bored
 
 
-`
+```cpp
 while (0 == 0)
 {
 deleteBordom();
 }
-`
+```
 
 
 ## Jump to:
