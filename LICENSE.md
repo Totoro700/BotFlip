@@ -1,6 +1,10 @@
 # License
 
+<br />
+
 ---
+
+<br />
 
 ## MIT License
 
