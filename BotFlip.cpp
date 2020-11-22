@@ -593,9 +593,9 @@ public:
 
 		// Ask
 		cout << "To Write?\n";
-		// Get input
-		std::getline(std::cin, toWrite);
 
+		// Get input
+		cin >> toWrite;
 		
 		// Open file
 		text.open("text.txt", ios_base::app);
