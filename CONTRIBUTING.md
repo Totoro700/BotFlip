@@ -29,21 +29,67 @@ Nope, you don't have to help by programming it! By testing it(running it) and [r
 
 Please label your code by commenting (C++: double slashes) because other people may not know what you created the function for
 
+Good:
+```cpp
+// Function for adding two numbers
+int add(int numOne, int numTwo)
+{
+    return numOne + numTwo;
+}
+```
+
+Bad:
+```cpp
+int add(int a, int b)
+{
+    return a+b;
+}
+```
+
 You can use Java-like braces if you want
 
-When naming variables, try not to put dashes and underscores. Instead, use Camel case (ex.: camelCaseVariable)
+When naming variables, try not to put underscores. Instead, use Camel case (ex.: camelCaseVariable)
 
-When naming classes, use Pascal case (ex.: PascalCaseClass)
+Good:
+```cpp
+int numOne = 0;
+string userInput = NULL;
+```
+
+Bad:
+```cpp
+int Num_One = 0;
+string User_Input = NULL;
+```
+
+When naming classes, try not to use underscores. Instead, use Pascal case (ex.: PascalCaseClass)
+
+Good:
+```cpp
+// Example class
+class ExampleClass
+{
+public:
+    int foo = 24;
+}
+```
+
+Bad:
+```cpp
+class Exmapleclass
+{
+public:
+    int foo=24;
+}
+```
 
 When naming functions, it is up to you! (I prefer Camel case though)
 
 Please do _not_ make your code look messy
 
-Example:
-
 Good:
 
-
+```cpp
 // Function for adding two numbers
 
 int foo(int numOne, int numTwo)
@@ -53,11 +99,14 @@ int foo(int numOne, int numTwo)
   return numOne + numTwo;
   
 }
-
+```
 
 
 Bad:
 
+```cpp
 int foo(int numOne,int numTwo){return num+numTwo;}
+```
 
-Try not to use multi-line comments. (You can use them if you want though)
+
+Jump to top: [jump](#)
