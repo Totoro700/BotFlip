@@ -17,7 +17,7 @@ deleteBordom();
 `
 
 
-Jump to:
+## Jump to:
 
 [Releases meta](https://github.com/Totoro700/BotFlip/blob/main/README.md#release-meta)
 
