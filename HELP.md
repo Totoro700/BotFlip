@@ -10,7 +10,7 @@ You might see all these files and be confused, here is a list of the important f
 
 [**README!!!!!!!! (.md)**](https://github.com/Totoro700/BotFlip/blob/main/README.md) - Please read this before downloading
 
-[**C++ script(.cpp)**](https://github.com/Totoro700/BotFlip/blob/main/BotFlip.cpp) - Just the regular C++ file
+[**C++ script(.cpp)**](https://github.com/Totoro700/BotFlip/blob/main/BotFlip.cpp) - Just the regular main C++ file
 
 [**Executable (.exe , Windows only)**](https://github.com/Totoro700/BotFlip/blob/main/Debug/BotFlip.exe) - Windows executable file
 
