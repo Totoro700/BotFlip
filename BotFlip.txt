@@ -47,9 +47,9 @@ public:
 
 	// String
 	string uPass;
-	string data[10] = {};
 	string toStore;
 	string tP;
+	string toWrite;
 
 	// Version
 	string ver = "1.4.0b";
@@ -588,9 +588,6 @@ public:
 	{
 		ofstream text;
 
-		// Create toWrite string variable
-		string toWrite;
-
 		// Ask
 		cout << "To Write?\n";
 
@@ -612,11 +609,20 @@ public:
 	void fowrite()
 	{
 		ofstream text;
-		string toWrite;
-		cout << "To Write?\n";
+
+		// Ask
+		cout << "To over write?\n";
+
+		// Input
 		cin >> toWrite;
+
+		// Open file
 		text.open("text.txt");
+
+		// Update file
 		text << toWrite + "\n";
+
+		// Close
 		text.close();
 		cout << "Updated file!\n";
 	}
