@@ -6,7 +6,7 @@ Windows only, sorry Mac users, I don't have executable file for Mac, you can run
 
 ---
 
-## Window only (can be Linux or OS similar to Windows)
+## Windows
 
 1. Go to the green buttong that says code with a download icon
 
