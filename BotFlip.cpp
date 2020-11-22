@@ -19,13 +19,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 
 // Include
-#include <iostream>;
-#include <Windows.h>;
-#include <cmath>;
-#include <math.h>;
-#include <shellapi.h>;
 #include <string>;
+#include <cmath>;
+#include <iomanip>;
+#include <iostream>;
 #include <fstream>;
+#include <math.h>;
+#include <Windows.h>;
+#include <shellapi.h>;
 
 // Std
 using namespace std;
@@ -39,7 +40,7 @@ constexpr unsigned int str2int(const char* str, int h = 0)
 
 
 // Class BotFlip
-class BotFlip 
+class BotFlip
 {
 public:
 	// Create variables
@@ -56,6 +57,9 @@ public:
 	int numToSell = 0;
 	int modNumOne = 0;
 	int modNumTwo = 0;
+	int helpCommandWidth = 15;
+	int helpDescriptionWidth = 70;
+	int helpIdWidth = 10;
 
 	// Char
 	char letter = NULL;
@@ -94,45 +98,45 @@ public:
 		{
 
 			// Help
-			cout << "--------------------HELP--------------------\n";
-			cout << "Format: [command name] - [description] - [id]\n";
-			cout << "help - Displays this help message - hlp\n";
-			cout << "playCoins - Play for a chance to get coins! - plyCns\n";
-			cout << "playPaper - Play for a chance to get paper! - plyPpr\n";
-			cout << "coins - See all the coins you have - cns\n";
-			cout << "paper - See all the paper you have - ppr\n";
-			cout << "sell - Sell the paper you have - sll\n";
-			cout << "steal - Steal - stl\n";
-			cout << "givemecoffee - Gives you coffee - gvmcff\n";
-			cout << "cls - Clears all the text on the screen - clear\n";
-			cout << "spam - Program spams - spm\n";
-			cout << "exit - Exits this program - ext\n";
-			cout << "add - Adds two numbers - add\n";
-			cout << "subtract - Sutracts two numbers - sbtrct\n";
-			cout << "multiply - Multiplies two numbers - mul\n";
-			cout << "divide - Divides two numbers - div\n";
-			cout << "modulus - Calculates the modules (mod) of two numbers - mod\n";
-			cout << "sine - Calculates sine of on a number - sin\n";
-			cout << "cosine - Calculates cosine on a number - cos\n";
-			cout << "tangent - Calculates tangent on a number - tan\n";
-			cout << "arcsin - Calculates arcsin on a number - asin\n";
-			cout << "arccos - Calculates arccos on a number - acos\n";
-			cout << "arctan - Calculates arctan on a number - atan\n";
-			cout << "ver - Displays the version - ver\n";
-			cout << "spcfcVer - Displays the specific version - sVer\n";
-			cout << "repository - Opens BotFlip's repository - repo\n";
-			cout << "report - Opens issue panel where you can report an issue - bug\n";
-			cout << "releases - Opens all the releases - release\n";
-			cout << "debug - Basic debug - debug\n";
-			cout << "fwrite - File write, opens a file a writes some text into it\n";
-			cout << "fowrite - File overwrite, opens a file and overwrites some text into it\n";
-			cout << "fclear - File clear, opens a file and clears all the contents in the file\n";
-			cout << "color-green - Sets the text color to green (default)\n";
-			cout << "color-red - Sets the text color to red\n";
-			cout << "color-white - Sets the text color to white\n";
-			cout << "color-blue - Sets the text color to blue (not recommended)\n";
-			cout << "\n";
-			cout << "-------------------------------------------------\n";
+			cout << "--------------------HELP--------------------" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "[command name]" << std::setw(helpDescriptionWidth) << "[description]" << std::setw(helpIdWidth) << "[id]" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "help" << std::setw(helpDescriptionWidth) << "Displays this help message" << std::setw(helpIdWidth) << "hlp" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "playCoins" << std::setw(helpDescriptionWidth) << "Play for a chance to get coins!" << std::setw(helpIdWidth) << "plyCns" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "playPaper" << std::setw(helpDescriptionWidth) << "Play for a chance to get paper!" << std::setw(helpIdWidth) << "plyPpr" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "coins" << std::setw(helpDescriptionWidth) << "See all the coins you have" << std::setw(helpIdWidth) << "cns" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "paper" << std::setw(helpDescriptionWidth) << "See all the paper you have" << std::setw(helpIdWidth) << "ppr" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "sell" << std::setw(helpDescriptionWidth) << "Sell the paper you have" << std::setw(helpIdWidth) << "sll" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "steal" << std::setw(helpDescriptionWidth) << "Steal" << std::setw(helpIdWidth) << "stl" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "givemecoffee" << std::setw(helpDescriptionWidth) << "Gives you coffee" << std::setw(helpIdWidth) << "gvmcff" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "cls" << std::setw(helpDescriptionWidth) << "Clears all the text on the screen" << std::setw(helpIdWidth) << "clear" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "spam" << std::setw(helpDescriptionWidth) << "Program spams" << std::setw(helpIdWidth) << "spm" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "exit" << std::setw(helpDescriptionWidth) << "Exits this program" << std::setw(helpIdWidth) << "ext" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "add" << std::setw(helpDescriptionWidth) << "Adds two numbers" << std::setw(helpIdWidth) << "add" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "subtract" << std::setw(helpDescriptionWidth) << "Sutracts two numbers" << std::setw(helpIdWidth) << "sbtrct" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "multiply" << std::setw(helpDescriptionWidth) << "Multiplies two numbers" << std::setw(helpIdWidth) << "mul" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "divide" << std::setw(helpDescriptionWidth) << "Divides two numbers" << std::setw(helpIdWidth) << "div" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "modulus" << std::setw(helpDescriptionWidth) << "Calculates the modules (mod) of two numbers" << std::setw(helpIdWidth) << "mod" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "sine" << std::setw(helpDescriptionWidth) << "Calculates sine of on a number" << std::setw(helpIdWidth) << "sin" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "cosine" << std::setw(helpDescriptionWidth) << "Calculates cosine on a number" << std::setw(helpIdWidth) << "cos" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "tangent" << std::setw(helpDescriptionWidth) << "Calculates tangent on a number" << std::setw(helpIdWidth) << "tan" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "arcsin" << std::setw(helpDescriptionWidth) << "Calculates arcsin on a number" << std::setw(helpIdWidth) << "asin" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "arccos" << std::setw(helpDescriptionWidth) << "Calculates arccos on a number" << std::setw(helpIdWidth) << "acos" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "arctan" << std::setw(helpDescriptionWidth) << "Calculates arctan on a number" << std::setw(helpIdWidth) << "atan" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "ver" << std::setw(helpDescriptionWidth) << "Displays the version" << std::setw(helpIdWidth) << "ver" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "spcfcVer" << std::setw(helpDescriptionWidth) << "Displays the specific version" << std::setw(helpIdWidth) << "sVer" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "repository" << std::setw(helpDescriptionWidth) << "Opens BotFlip's repository" << std::setw(helpIdWidth) << "repo" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "report" << std::setw(helpDescriptionWidth) << "Opens issue panel where you can report an issue" << std::setw(helpIdWidth) << "bug" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "releases" << std::setw(helpDescriptionWidth) << "Opens all the releases" << std::setw(helpIdWidth) << "release" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "debug" << std::setw(helpDescriptionWidth) << "Basic debug" << std::setw(helpIdWidth) << "debug" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "fwrite" << std::setw(helpDescriptionWidth) << "File write, opens a file a writes some text into it" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "fowrite" << std::setw(helpDescriptionWidth) << "File overwrite, opens a file and overwrites some text into it" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "fclear" << std::setw(helpDescriptionWidth) << "File clear, opens a file and clears all the contents in the file" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "color-green" << std::setw(helpDescriptionWidth) << "Sets the text color to green (default)" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "color-red" << std::setw(helpDescriptionWidth) << "Sets the text color to red" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "color-white" << std::setw(helpDescriptionWidth) << "Sets the text color to white" << std::endl;
+			cout << std::left << std::setw(helpCommandWidth) << "color-blue" << std::setw(helpDescriptionWidth) << "Sets the text color to blue (not recommended)" << std::endl;
+			cout << std::endl;
+			cout << "-------------------------------------------------" << std::endl;
 		}
 		catch (...)
 		{
@@ -293,7 +297,7 @@ public:
 			'`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', '[', ']', ';', ',', '.', '/', '~', '!', '@', '#', '$', '%', '^',
 			'&', '*', '(', ')', '_', '+', '{', '}', '|', ':', '<', '>', '?', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D',
 			'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '§', '\u0201', '\u00a1', '\u00a2', '\u00a3', '\u00a4', '\u00a5',
-			'\u00a6', '\u00a7', '', 'é', 'Ó', 'Ñ', '¼', 'Ì', 'ó', 'ÿ', 'ÿ', 'ƒ', 'Ä', 'Ê', 'ô', 'å', 'ÿ', 
+			'\u00a6', '\u00a7', '', 'é', 'Ó', 'Ñ', '¼', 'Ì', 'ó', 'ÿ', 'ÿ', 'ƒ', 'Ä', 'Ê', 'ô', 'å', 'ÿ',
 
 			};
 
@@ -437,7 +441,7 @@ public:
 		cout << tan(numOne);
 		cout << "\n";
 	}
-	
+
 	// Load
 	void load()
 	{
@@ -458,7 +462,7 @@ public:
 		}
 		clear();
 	}
-	
+
 	// Echo
 	void echo()
 	{
@@ -475,7 +479,7 @@ public:
 		cout << std::asin(num);
 		cout << "\n";
 	}
-	
+
 	// Arccosine
 	void acos()
 	{
@@ -518,7 +522,7 @@ public:
 		cout << "Number?\n";
 		cin >> num;
 		cout << 1 / cos(num);
-		cout << "\n";	
+		cout << "\n";
 	}
 
 	// Cosecant
@@ -610,7 +614,7 @@ public:
 
 		// Get input
 		cin >> toWrite;
-		
+
 		// Open file
 		text.open("text.txt", ios_base::app);
 
@@ -663,12 +667,12 @@ public:
 	void log(string cmd)
 	{
 		ofstream cmd_log;
-		
+
 		// Open log
 		cmd_log.open("cmd_log.txt", ios_base::app);
 
 		// Update log
-		cmd_log << cmd+"\n";
+		cmd_log << cmd + "\n";
 
 		// Close log
 		cmd_log.close();
@@ -679,7 +683,7 @@ public:
 	{
 		return to_string(toStr);
 	}
-	
+
 	// Green
 	void green()
 	{
@@ -750,161 +754,161 @@ int main()
 		// Check for commands
 		switch (str2int(cmd))
 		{
-			case str2int("help"):
-			case str2int("hlp"):
-				b.help();
-				break;
-			case str2int("Hi"):
-			case str2int("hi"):
-			case str2int("Hi!"):
-			case str2int("hi!"):
-			case str2int("Hello"):
-			case str2int("hello"):
-			case str2int("Hello!"):
-			case str2int("hello!"):
-				cout << "Hi! Type help for a list of commands you can use\n";
-				break;
-			case str2int("playCoins"):
-			case str2int("plyCns"):
-			case str2int("play_coins"):
-			case str2int("ply_cns"):
-				b.playCoins();
-				break;
-			case str2int("playPaper"):
-			case str2int("plyPpr"):
-			case str2int("play_paper"):
-			case str2int("ply_ppr"):
-				b.playPaper();
-				break;
-			case str2int("coins"):
-			case str2int("cns"):
-				b.getCoins();
-				break;
-			case str2int("paper"):
-			case str2int("ppr"):
-				b.getPaper();
-				break;
-			case str2int("steal"):
-				b.steal();
-				break;
-			case str2int("sell"):
-			case str2int("sll"):
-				b.sell();
-				break;
-			case str2int("givemecoffee"):
-			case str2int("gvmcff"):
-				b.coffee();
-				break;
-			case str2int("hack"):
-				b.hack();
-			case str2int("cls"):
-			case str2int("CLS"):
-			case str2int("Cls"):
-			case str2int("clear"):
-				b.clear();
-				break;
-			case str2int("spam"):
-				b.spam();
-				break;
-			case str2int("add"):
-				b.add();
-				break;
-			case str2int("subtract"):
-			case str2int("sub"):
-				b.subtract();
-				break;
-			case str2int("multiply"):
-			case str2int("mul"):
-				b.multiply();
-				break;
-			case str2int("divide"):
-			case str2int("div"):
-				b.divide();
-				break;
-			case str2int("modulus"):
-			case str2int("mod"):
-				b.mod();
-				break;
-			case str2int("ver"):
-				b.version();
-			case str2int("spcfcVer"):
-			case str2int("sVer"):
-				b.spcfcVer();
-				break;
-			case str2int("sine"):
-			case str2int("sin"):
-				b.sine();
-				break;
-			case str2int("cosine"):
-			case str2int("cos"):
-				b.cosine();
-				break;
-			case str2int("tangent"):
-			case str2int("tan"):
-				b.tangent();
-				break;
-			case str2int("echo"):
-				b.echo();
-				break;
-			case str2int("arcsin"):
-			case str2int("asin"):
-				b.asin();
-				break;
-			case str2int("arccos"):
-			case str2int("acos"):
-				b.acos();
-				break;
-			case str2int("arctan"):
-			case str2int("atan"):
-				b.atan();
-				break;
-			case str2int("repo"):
-			case str2int("repository"):
-				b.repo();
-				break;
-			case str2int("bug"):
-			case str2int("report"):
-			case str2int("issue"):
-			case str2int("issues"):
-				b.bug();
-				break;
-			case str2int("releases"):
-			case str2int("release"):
-				b.releases();
-				break;
-			case str2int("secant"):
-				b.sec();
-				break;
-			case str2int("cosecant"):
-				b.csc();
-				break;
-			case str2int("cotangent"):
-				b.cot();
-				break;
-			case str2int("debug"):
-				b.debug();
-				break;
-			case str2int("fwrite"):
-				b.fwrite();
-				break;
-			case str2int("fowrite"):
-			case str2int("fclear"):
-				b.fclear();
-			case str2int("color-green"):
-				b.green();
-				break;
-			case str2int("color-red"):
-				b.red();
-				break;
-			case str2int("color-white"):
-				b.white();
-				break;
-			case str2int("color-blue"):
-				b.blue();
-				break;
-			default:
-				b.empty();
-				break;
+		case str2int("help"):
+		case str2int("hlp"):
+			b.help();
+			break;
+		case str2int("Hi"):
+		case str2int("hi"):
+		case str2int("Hi!"):
+		case str2int("hi!"):
+		case str2int("Hello"):
+		case str2int("hello"):
+		case str2int("Hello!"):
+		case str2int("hello!"):
+			cout << "Hi! Type help for a list of commands you can use\n";
+			break;
+		case str2int("playCoins"):
+		case str2int("plyCns"):
+		case str2int("play_coins"):
+		case str2int("ply_cns"):
+			b.playCoins();
+			break;
+		case str2int("playPaper"):
+		case str2int("plyPpr"):
+		case str2int("play_paper"):
+		case str2int("ply_ppr"):
+			b.playPaper();
+			break;
+		case str2int("coins"):
+		case str2int("cns"):
+			b.getCoins();
+			break;
+		case str2int("paper"):
+		case str2int("ppr"):
+			b.getPaper();
+			break;
+		case str2int("steal"):
+			b.steal();
+			break;
+		case str2int("sell"):
+		case str2int("sll"):
+			b.sell();
+			break;
+		case str2int("givemecoffee"):
+		case str2int("gvmcff"):
+			b.coffee();
+			break;
+		case str2int("hack"):
+			b.hack();
+		case str2int("cls"):
+		case str2int("CLS"):
+		case str2int("Cls"):
+		case str2int("clear"):
+			b.clear();
+			break;
+		case str2int("spam"):
+			b.spam();
+			break;
+		case str2int("add"):
+			b.add();
+			break;
+		case str2int("subtract"):
+		case str2int("sub"):
+			b.subtract();
+			break;
+		case str2int("multiply"):
+		case str2int("mul"):
+			b.multiply();
+			break;
+		case str2int("divide"):
+		case str2int("div"):
+			b.divide();
+			break;
+		case str2int("modulus"):
+		case str2int("mod"):
+			b.mod();
+			break;
+		case str2int("ver"):
+			b.version();
+		case str2int("spcfcVer"):
+		case str2int("sVer"):
+			b.spcfcVer();
+			break;
+		case str2int("sine"):
+		case str2int("sin"):
+			b.sine();
+			break;
+		case str2int("cosine"):
+		case str2int("cos"):
+			b.cosine();
+			break;
+		case str2int("tangent"):
+		case str2int("tan"):
+			b.tangent();
+			break;
+		case str2int("echo"):
+			b.echo();
+			break;
+		case str2int("arcsin"):
+		case str2int("asin"):
+			b.asin();
+			break;
+		case str2int("arccos"):
+		case str2int("acos"):
+			b.acos();
+			break;
+		case str2int("arctan"):
+		case str2int("atan"):
+			b.atan();
+			break;
+		case str2int("repo"):
+		case str2int("repository"):
+			b.repo();
+			break;
+		case str2int("bug"):
+		case str2int("report"):
+		case str2int("issue"):
+		case str2int("issues"):
+			b.bug();
+			break;
+		case str2int("releases"):
+		case str2int("release"):
+			b.releases();
+			break;
+		case str2int("secant"):
+			b.sec();
+			break;
+		case str2int("cosecant"):
+			b.csc();
+			break;
+		case str2int("cotangent"):
+			b.cot();
+			break;
+		case str2int("debug"):
+			b.debug();
+			break;
+		case str2int("fwrite"):
+			b.fwrite();
+			break;
+		case str2int("fowrite"):
+		case str2int("fclear"):
+			b.fclear();
+		case str2int("color-green"):
+			b.green();
+			break;
+		case str2int("color-red"):
+			b.red();
+			break;
+		case str2int("color-white"):
+			b.white();
+			break;
+		case str2int("color-blue"):
+			b.blue();
+			break;
+		default:
+			b.empty();
+			break;
 		}
 	}
 }
