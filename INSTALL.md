@@ -2,6 +2,13 @@
 
 ---
 
+```cpp
+void install()
+{
+  install("BotFlip.exe");
+}
+```
+
 Windows only, sorry Mac users, I don't have executable file for Mac, you can run the [C++ script](https://github.com/Totoro700/BotFlip/blob/main/BotFlip.cpp)
 
 ---
