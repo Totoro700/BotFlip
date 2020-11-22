@@ -12,7 +12,7 @@ You might see all these files and be confused, here is a list of the important f
 
 [**C++ script(.cpp)**](https://github.com/Totoro700/BotFlip/blob/main/BotFlip.cpp) - Just the regular C++ file
 
-[vExecutable (.exe , Windows only)**](https://github.com/Totoro700/BotFlip/blob/main/Debug/BotFlip.exe) - Windows executable file
+[**Executable (.exe , Windows only)**](https://github.com/Totoro700/BotFlip/blob/main/Debug/BotFlip.exe) - Windows executable file
 
 [**Visual studio project(.sln)**](https://github.com/Totoro700/BotFlip/blob/main/BotFlip.sln) - Visual studio project file
 
