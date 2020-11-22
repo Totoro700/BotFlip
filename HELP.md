@@ -2,6 +2,13 @@
 
 <br />
 
+```cpp
+while (TRUE)
+{
+  deleteConfusion();
+}
+```
+
 ---
 
 <br />
