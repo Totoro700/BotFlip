@@ -60,12 +60,6 @@ Here is some examples of the versions:
 
 ---
 
-## Branches
-
-[main](https://github.com/Totoro700/BotFlip/tree/main "Main branch") - Just [main](https://github.com/Totoro700/BotFlip/tree/main), the final released version
-
----
-
 ## Images
 
 One image, [icon.ico](https://github.com/Totoro700/icon.ico "Icon (icon.ico)"), it's for the icon of [BotFlip](https://github.com/Totoro700/BotFlip), not under copyright
