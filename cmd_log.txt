@@ -1,0 +1,10 @@
+help
+fwrite
+fwrite
+fwrite
+fwrite
+fwrite
+fqwrite
+fwrite
+fqwrite
+fwrite

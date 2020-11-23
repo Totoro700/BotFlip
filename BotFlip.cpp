@@ -612,15 +612,28 @@ public:
 		// Ask
 		cout << "To Write?\n";
 
-		// Get input
-		cin >> toWrite;
-
 		// Open file
-		text.open("text.txt", ios_base::app);
+		text.open("text.txt", ios::out | ios::in | ios::app);
 
-		// Update file
-		text << toWrite;
+		if (text.is_open())
+		{
+			// Get input
+			while (getline(cin, toWrite))
+			{
+				if (toWrite == "\n")
+				{
+					break;
+				}
 
+				// Update file
+				text << toWrite;
+			}
+		}
+		else
+		{
+			cout << "Unable to open file!\n";
+		}
+		
 		// Close file
 		text.close();
 		cout << "Updated file!\n";
