@@ -624,7 +624,7 @@ public:
 		// Get input
 		cin >> toWrite;
 
-		// Open file
+		// Open file and append new content
 		text.open("text.txt", ios_base::app);
 
 		while (getline(cin, toWrite)) {
@@ -634,9 +634,6 @@ public:
 			// Update file
 			text << toWrite << std::endl;
 		}
-		
-		// Update file
-		text << toWrite;
 
 		// Close file
 		text.close();
