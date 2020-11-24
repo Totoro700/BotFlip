@@ -90,10 +90,6 @@ public:
 	// Coins
 	void getCoins()
 	{
-		// Get coins
-		cout << "Coins: ";
-		cout << c->coins;
-		cout << "\n";
 	}
 
 	// Paper
