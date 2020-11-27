@@ -145,6 +145,7 @@
     <ClCompile Include="Command.cpp" />
     <ClCompile Include="CommandFactory.cpp" />
     <ClCompile Include="GetCoins.cpp" />
+    <ClCompile Include="HackCommand.cpp" />
     <ClCompile Include="HelpCommand.cpp" />
     <ClCompile Include="PlayCoinsCommand.cpp" />
     <ClCompile Include="PlayPaperCommand.cpp" />

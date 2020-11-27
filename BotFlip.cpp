@@ -96,22 +96,6 @@ public:
 	// Hack
 	void hack()
 	{
-		// Hack			
-		cout << "Password: ";
-
-		// Get input
-		cin >> uPass;
-		if (uPass == "BotFlip123-C++")
-		{
-			// Correct
-			c->coins = c->coins + 9999999999;
-			c->paper = c->paper + 9999999999;
-		}
-		else
-		{
-			// Incorrect
-			cout << "Incorrect!";
-		}
 	}
 
 	// Steal
