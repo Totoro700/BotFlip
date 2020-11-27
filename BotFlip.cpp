@@ -94,15 +94,6 @@ public:
 	}
 
 	//                              Trigonometric functions
-	// Sine
-	void sine()
-	{
-		// Sine
-		cout << "Number?\n";
-		cin >> numOne;
-		cout << sin(numOne);
-		cout << "\n";
-	}
 
 	// Cosine
 	void cosine()
@@ -532,7 +523,7 @@ int main()
 			break;
 		case str2int("sine"):
 		case str2int("sin"):
-			b.sine();
+			runCommand(CommandFactory::Sin);
 			break;
 		case str2int("cosine"):
 		case str2int("cos"):

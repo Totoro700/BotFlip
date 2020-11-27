@@ -16,6 +16,7 @@
 #include "ModCommand.cpp";
 #include "VerCommand.cpp";
 #include "Spcfcver.cpp";
+#include "SinCommand.cpp";
 
 // Std
 using namespace std;
@@ -40,7 +41,8 @@ public:
 		Divide,
 		Modulus,
 		Ver,
-		Spcfcver
+		Spcfcver,
+		Sin
 	};
 
 	// Commands
@@ -80,6 +82,8 @@ public:
 				return make_unique<VersionCommand>();
 			case Spcfcver:
 				return make_unique<SpcfcverCommand>();
+			case Sin:
+				return make_unique<SinCommand>();
 		}
 	};
 };
