@@ -16,13 +16,11 @@ public:
 		return "steal";
 	};
 
-	BotFlipConfig c;
-
 	// Run
 	void run() override {
 		try
 		{
-			
+			cout << "No.\n";
 		}
 		catch (...)
 		{

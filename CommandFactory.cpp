@@ -10,6 +10,7 @@
 #include "HackCommand.cpp";
 #include "SpamCommand.cpp";
 #include "AddCommand.cpp";
+#include "SubtractCommand.cpp";
 
 // Std
 using namespace std;
@@ -28,7 +29,8 @@ public:
 		Coffee,
 		Hack,
 		Spam,
-		Add
+		Add,
+		Subtract
 	};
 
 	static unique_ptr<Command> createCommand(CommandType commandType) {
@@ -55,6 +57,8 @@ public:
 				return make_unique<SpamCommand>();
 			case Add:
 				return make_unique<AddCommand>();
+			case Subtract:
+				return make_unique<SubtractCommand>();
 		}
 	};
 };

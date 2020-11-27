@@ -152,6 +152,7 @@
     <ClCompile Include="PlayPaperCommand.cpp" />
     <ClCompile Include="SpamCommand.cpp" />
     <ClCompile Include="StealCommand.cpp" />
+    <ClCompile Include="SubtractCommand.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />

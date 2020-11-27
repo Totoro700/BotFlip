@@ -1,4 +1,5 @@
 #include <iostream>;
+#include <Windows.h>;
 
 using namespace std;
 
@@ -15,7 +16,6 @@ public:
 	int toCalcu = 0;
 	int a = 0;
 	int b = 0;
-	int numToSell = 0;
 	int modNumOne = 0;
 	int modNumTwo = 0;
 	int helpCommandWidth = 15;

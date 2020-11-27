@@ -96,12 +96,6 @@ public:
 	// Subtract
 	void subtract()
 	{
-		cout << "Number one to subtract?\n";
-		cin >> numOne;
-		cout << "Number two to subtract?\n";
-		cin >> numTwo;
-		cout << numOne - numTwo;
-		cout << "\n";
 	}
 
 	// Multiply
@@ -566,7 +560,7 @@ int main()
 			runCommand(CommandFactory::Spam);
 			break;
 		case str2int("add"):
-			b.add();
+			runCommand(CommandFactory::Add);
 			break;
 		case str2int("subtract"):
 		case str2int("sub"):
