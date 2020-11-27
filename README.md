@@ -68,7 +68,7 @@ It is best to take [Version 1.0.0-beta](https://github.com/Totoro700/BotFlip/rel
 
 ## Images
 
-One image, [icon.ico](https://github.com/Totoro700/icon.ico "Icon (icon.ico)"), it's for the icon of [BotFlip](https://github.com/Totoro700/BotFlip), not under copyright
+One image: [icon.ico](https://github.com/Totoro700/icon.ico "Icon (icon.ico)")
 
 ---
 
