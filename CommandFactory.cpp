@@ -43,6 +43,7 @@ public:
 		Spcfcver
 	};
 
+	// Commands
 	static unique_ptr<Command> createCommand(CommandType commandType) {
 		switch (commandType) {
 			case Help:
