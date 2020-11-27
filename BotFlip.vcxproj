@@ -156,6 +156,7 @@
     <ClCompile Include="SpamCommand.cpp" />
     <ClCompile Include="StealCommand.cpp" />
     <ClCompile Include="SubtractCommand.cpp" />
+    <ClCompile Include="VersionCommand.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
