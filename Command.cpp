@@ -17,6 +17,7 @@ public:
 
 	// Pointer for the class BotFlipConfig
 	BotFlipConfig* config = new BotFlipConfig();
+	BotFlipConfig* c;
 
 	virtual string description() = 0;
 

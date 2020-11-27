@@ -101,12 +101,7 @@ public:
 	// Multiply
 	void multiply()
 	{
-		cout << "Number one to multiply?\n";
-		cin >> numOne;
-		cout << "Number two to multiply?\n";
-		cin >> numTwo;
-		cout << numOne * numTwo;
-		cout << "\n";
+		
 	}
 
 	// Divide

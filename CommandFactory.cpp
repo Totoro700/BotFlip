@@ -59,6 +59,8 @@ public:
 				return make_unique<AddCommand>();
 			case Subtract:
 				return make_unique<SubtractCommand>();
+			case Multiply:
+				return make_unique<MultiplyCommand>();
 		}
 	};
 };

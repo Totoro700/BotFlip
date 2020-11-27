@@ -1,30 +1,30 @@
 #include "BotFlipConfig.cpp";
 #include "Command.cpp";
 
-class SubtractCommand : public Command
+class MultiplyCommand : public Command
 {
 	// Public
 public:
 	// Functions
 	// Description
 	string description() override {
-		return "Subtracts two numbers";
+		return "Multiplies two numbers";
 	};
 
 	// Name
 	string name() override {
-		return "subtract";
+		return "steal";
 	};
 
 	// Run
 	void run() override {
 		try
 		{
-			cout << "Number one to subtract?\n";
+			cout << "Number one to multiply?\n";
 			cin >> this->getConfig()->numOne;
-			cout << "Number two to subtract?\n";
+			cout << "Number two to multiply?\n";
 			cin >> this->getConfig()->numTwo;
-			cout << this->getConfig()->numOne - this->getConfig()->numTwo;
+			cout << this->getConfig()->numOne * this->getConfig()->numTwo;
 			cout << "\n";
 		}
 		catch (...)
@@ -34,7 +34,7 @@ public:
 	}
 
 	// Because we have virtual functions, we need a virtual destructor
-	virtual ~SubtractCommand() {
+	virtual ~MultiplyCommand() {
 
 	};
 

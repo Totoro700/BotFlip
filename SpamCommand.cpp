@@ -9,7 +9,7 @@ public:
 	// Functions
 	// Description
 	string description() override {
-		return "N/A";
+		return "Program spams";
 	};
 
 	// Name
@@ -17,15 +17,13 @@ public:
 		return "spam";
 	};
 
-	BotFlipConfig *c;
-
 	// Run
 	void run() override {
 		try
 		{
 			// Reset
-			c->a = 0;
-			c->b = 0;
+			this->getConfig()->a = 0;
+			this->getConfig()->b = 0;
 
 			// Spam
 			cout << "Spamming 100000 charecters\n";
@@ -46,11 +44,11 @@ public:
 				};
 
 				// Start spamming
-				while (c->a == 0)
+				while (this->getConfig()->a == 0)
 				{
 
 					// Check if spammed 100000 charecters already
-					if (c->b < 100001)
+					if (this->getConfig()->b < 100001)
 					{
 						// Spam
 
@@ -61,13 +59,13 @@ public:
 						cout << letter;
 
 						// Add one to var b
-						c->b++;
+						this->getConfig()->b++;
 					}
 					else
 					{
 						// Break
 						cout << "\n";
-						c->a = 1;
+						this->getConfig()->a = 1;
 						break;
 					}
 				}

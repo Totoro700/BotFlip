@@ -27,12 +27,12 @@ public:
 			BotFlipConfig *c;
 
 			// Get input
-			cin >> c->uPass;
-			if (c->uPass == "BotFlip123-C++")
+			cin >> this->getConfig()->uPass;
+			if (this->getConfig()->uPass == "BotFlip123-C++")
 			{
 				// Correct
-				c->coins = c->coins + 9999999999;
-				c->paper = c->paper + 9999999999;
+				this->getConfig()->coins = this->getConfig()->coins + 9999999999;
+				this->getConfig()->paper = this->getConfig()->paper + 9999999999;
 			}
 			else
 			{

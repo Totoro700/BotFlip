@@ -23,10 +23,10 @@ public:
 		try
 		{
 			cout << "Number one to add?\n";
-			cin >> c->numOne;
+			cin >> this->getConfig()->numOne;
 			cout << "Number two to add?\n";
-			cin >> c->numTwo;
-			cout << c->numOne + c->numTwo;
+			cin >> this->getConfig()->numTwo;
+			cout << this->getConfig()->numOne + this->getConfig()->numTwo;
 			cout << "\n";
 		}
 		catch (...)
