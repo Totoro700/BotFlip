@@ -149,6 +149,7 @@
     <ClCompile Include="HelpCommand.cpp" />
     <ClCompile Include="PlayCoinsCommand.cpp" />
     <ClCompile Include="PlayPaperCommand.cpp" />
+    <ClCompile Include="SpamCommand.cpp" />
     <ClCompile Include="StealCommand.cpp" />
   </ItemGroup>
   <ItemGroup>

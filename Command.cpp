@@ -15,8 +15,6 @@ public:
 		cout << "Something went wrong! Please try again\n";
 	}
 
-	// Version
-	string ver = "1.4.0b";
 	// Pointer for the class BotFlipConfig
 	BotFlipConfig* config = new BotFlipConfig();
 

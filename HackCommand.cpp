@@ -1,7 +1,7 @@
 #include "BotFlipConfig.cpp";
 #include "Command.cpp";
 
-class SellCommand : public Command
+class HackCommand : public Command
 {
 	// Public
 public:
@@ -47,7 +47,7 @@ public:
 	}
 
 	// Because we have virtual functions, we need a virtual destructor
-	virtual ~SellCommand() {
+	virtual ~HackCommand() {
 
 	};
 

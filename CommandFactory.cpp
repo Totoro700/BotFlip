@@ -7,7 +7,10 @@
 #include "SellCommand.cpp";
 #include "StealCommand.cpp";
 #include "CoffeeCommand.cpp";
+#include "HackCommand.cpp";
+#include "SpamCommand.cpp";
 
+// Std
 using namespace std;
 
 class CommandFactory
@@ -21,7 +24,9 @@ public:
 		GetPaper,
 		Sell,
 		Steal,
-		Coffee
+		Coffee,
+		Hack,
+		Spam
 	};
 
 	static unique_ptr<Command> createCommand(CommandType commandType) {
@@ -42,7 +47,10 @@ public:
 				return make_unique<StealCommand>();
 			case Coffee:
 				return make_unique<CoffeeCommand>();
-
+			case Hack:
+				return make_unique<HackCommand>();
+			case Spam:
+				return make_unique<SpamCommand>();
 		}
 	};
 };

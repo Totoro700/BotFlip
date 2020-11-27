@@ -93,77 +93,15 @@ public:
 		cout << "";
 	}
 
-	// Hack
-	void hack()
-	{
-	}
-
-	// Steal
-	void steal()
-	{
-	}
-
 	// Spam
 	void spam()
 	{
-		// Reset
-		a = 0;
-		b = 0;
-
-		// Spam
-		cout << "Spamming 100000 charecters\n";
-
-		// Wait 1 second
-		Sleep(1000);
-		try
-		{
-			// Set charecters to spam
-			char chars[115] = {
-
-			'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
-			'`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', '[', ']', ';', ',', '.', '/', '~', '!', '@', '#', '$', '%', '^',
-			'&', '*', '(', ')', '_', '+', '{', '}', '|', ':', '<', '>', '?', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D',
-			'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '§', '\u0201', '\u00a1', '\u00a2', '\u00a3', '\u00a4', '\u00a5',
-			'\u00a6', '\u00a7', '', 'é', 'Ó', 'Ñ', '¼', 'Ì', 'ó', 'ÿ', 'ÿ', 'ƒ', 'Ä', 'Ê', 'ô', 'å', 'ÿ',
-
-			};
-
-			// Start spamming
-			while (a == 0)
-			{
-
-				// Check if spammed 100000 charecters already
-				if (b < 100001)
-				{
-					// Spam
-
-					//Get char
-					char letter = chars[rand() % 116 + 1];
-
-					// Print char
-					cout << letter;
-
-					// Add one to var b
-					b++;
-				}
-				else
-				{
-					// Break
-					cout << "\n";
-					a = 1;
-					break;
-				}
-			}
+		
 		}
 		catch (...)
 		{
 			e();
 		}
-	}
-
-	void coffee()
-	{
-
 	}
 
 	// Add
@@ -639,7 +577,7 @@ int main()
 			runCommand(CommandFactory::Coffee);
 			break;
 		case str2int("hack"):
-			b.hack();
+			runCommand(CommandFactory::Hack);
 		case str2int("cls"):
 		case str2int("CLS"):
 		case str2int("Cls"):
