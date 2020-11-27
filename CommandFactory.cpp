@@ -11,6 +11,9 @@
 #include "SpamCommand.cpp";
 #include "AddCommand.cpp";
 #include "SubtractCommand.cpp";
+#include "MultiplyCommand.cpp";
+#include "DivideCommand.cpp";
+#include "ModulusCommand.cpp";
 
 // Std
 using namespace std;
@@ -30,7 +33,10 @@ public:
 		Hack,
 		Spam,
 		Add,
-		Subtract
+		Subtract,
+		Multiply,
+		Divide,
+		Modulus
 	};
 
 	static unique_ptr<Command> createCommand(CommandType commandType) {
@@ -61,6 +67,10 @@ public:
 				return make_unique<SubtractCommand>();
 			case Multiply:
 				return make_unique<MultiplyCommand>();
+			case Divide:
+				return make_unique<DivideCommand>();
+			case Modulus:
+				return make_unique<ModulusCommand>();
 		}
 	};
 };

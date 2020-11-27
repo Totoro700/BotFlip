@@ -93,39 +93,6 @@ public:
 		cout << "";
 	}
 
-	// Subtract
-	void subtract()
-	{
-	}
-
-	// Multiply
-	void multiply()
-	{
-		
-	}
-
-	// Divide
-	void divide()
-	{
-		cout << "Number one to divide?\n";
-		cin >> numOne;
-		cout << "Number two to divide?\n";
-		cin >> numTwo;
-		cout << numOne / numTwo;
-		cout << "\n";
-	}
-
-	// Modulus
-	void mod()
-	{
-		cout << "Number one to calculate modulus?\n";
-		cin >> modNumOne;
-		cout << "Number two to calculate modulus\n";
-		cin >> modNumTwo;
-		cout << modNumOne % modNumTwo;
-		cout << "\n";
-	}
-
 	// Version
 	void version()
 	{
@@ -559,19 +526,19 @@ int main()
 			break;
 		case str2int("subtract"):
 		case str2int("sub"):
-			b.subtract();
+			runCommand(CommandFactory::Subtract);
 			break;
 		case str2int("multiply"):
 		case str2int("mul"):
-			b.multiply();
+			runCommand(CommandFactory::Multiply);
 			break;
 		case str2int("divide"):
 		case str2int("div"):
-			b.divide();
+			runCommand(CommandFactory::Divide);
 			break;
 		case str2int("modulus"):
 		case str2int("mod"):
-			b.mod();
+			runCommand(CommandFactory::Modulus);
 			break;
 		case str2int("ver"):
 			b.version();
