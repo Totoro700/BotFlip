@@ -1,0 +1,11 @@
+help
+help
+color-red
+color-blue
+color-green
+cls
+spam
+cls
+help
+exit
+exit
