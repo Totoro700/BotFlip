@@ -141,12 +141,14 @@
   <ItemGroup>
     <ClCompile Include="BotFlip.cpp" />
     <ClCompile Include="BotFlipConfig.cpp" />
+    <ClCompile Include="CoffeeCommand.cpp" />
     <ClCompile Include="Command.cpp" />
     <ClCompile Include="CommandFactory.cpp" />
     <ClCompile Include="GetCoins.cpp" />
     <ClCompile Include="HelpCommand.cpp" />
     <ClCompile Include="PlayCoinsCommand.cpp" />
     <ClCompile Include="PlayPaperCommand.cpp" />
+    <ClCompile Include="StealCommand.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />

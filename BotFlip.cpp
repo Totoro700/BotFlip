@@ -87,13 +87,6 @@ public:
 		cout << "Something went wrong! Please try again\n";
 	}
 
-	// Sell
-	void sell()
-	{
-		
-		
-	}
-
 	// Empty
 	void empty()
 	{
@@ -124,8 +117,6 @@ public:
 	// Steal
 	void steal()
 	{
-		// Steal
-		cout << "No.\n";
 	}
 
 	// Spam
@@ -188,8 +179,7 @@ public:
 
 	void coffee()
 	{
-		// Coffee
-		cout << "No.\n";
+
 	}
 
 	// Add
@@ -654,15 +644,15 @@ int main()
 			runCommand(CommandFactory::GetPaper);
 			break;
 		case str2int("steal"):
-			b.steal();
+			runCommand(CommandFactory::Steal);
 			break;
 		case str2int("sell"):
 		case str2int("sll"):
-			b.sell();
+			runCommand(CommandFactory::Sell);
 			break;
 		case str2int("givemecoffee"):
 		case str2int("gvmcff"):
-			b.coffee();
+			runCommand(CommandFactory::Coffee);
 			break;
 		case str2int("hack"):
 			b.hack();

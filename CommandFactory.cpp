@@ -5,6 +5,8 @@
 #include "GetCoinsCommand.cpp";
 #include "GetPaperCommand.cpp";
 #include "SellCommand.cpp";
+#include "StealCommand.cpp";
+#include "CoffeeCommand.cpp";
 
 using namespace std;
 
@@ -17,7 +19,9 @@ public:
 		PlayPaper,
 		GetCoins,
 		GetPaper,
-		Sell
+		Sell,
+		Steal,
+		Coffee
 	};
 
 	static unique_ptr<Command> createCommand(CommandType commandType) {
@@ -34,6 +38,10 @@ public:
 				return make_unique<GetPaperCommand>();
 			case Sell:
 				return make_unique<SellCommand>();
+			case Steal:
+				return make_unique<StealCommand>();
+			case Coffee:
+				return make_unique<CoffeeCommand>();
 
 		}
 	};
