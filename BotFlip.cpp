@@ -87,50 +87,11 @@ public:
 		cout << "Something went wrong! Please try again\n";
 	}
 
-	// Coins
-	void getCoins()
-	{
-	}
-
-	// Paper
-	void getPaper()
-	{
-		// Get paper
-		cout << "Paper: ";
-		cout << c->paper;
-		cout << "\n";
-	}
-
 	// Sell
 	void sell()
 	{
-		// Sell paper
-		if (c->paper == 0)
-		{
-			// No paper to sell
-			cout << "You don't even have paper to sell!\n";
-		}
-		else
-		{
-			cout << "For every paper you sell, you get 10 coins\n";
-			cout << "How many papers do you want to sell?\n";
-
-			// Get num to sell
-			cin >> numToSell;
-
-			// Check
-			if (numToSell > c->paper)
-			{
-				// Not enough paper
-				cout << "You don't have enough paper!\n";
-			}
-			else
-			{
-				// Sell
-				c->paper = c->paper - numToSell;
-				c->coins = c->coins + (numToSell * 10);
-			}
-		}
+		
+		
 	}
 
 	// Empty
@@ -612,6 +573,7 @@ public:
 		cout << "Successfully changed the text color to blue!\n";
 	}
 
+
 };
 
 
@@ -685,11 +647,11 @@ int main()
 			break;
 		case str2int("coins"):
 		case str2int("cns"):
-			b.getCoins();
+			runCommand(CommandFactory::GetCoins);
 			break;
 		case str2int("paper"):
 		case str2int("ppr"):
-			b.getPaper();
+			runCommand(CommandFactory::GetPaper);
 			break;
 		case str2int("steal"):
 			b.steal();

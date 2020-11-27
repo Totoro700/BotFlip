@@ -2,6 +2,9 @@
 #include "HelpCommand.cpp";
 #include "PlayCoinsCommand.cpp";
 #include "PlayPaperCommand.cpp";
+#include "GetCoinsCommand.cpp";
+#include "GetPaperCommand.cpp";
+#include "SellCommand.cpp";
 
 using namespace std;
 
@@ -11,7 +14,10 @@ public:
 	enum CommandType {
 		Help,
 		PlayCoins,
-		PlayPaper
+		PlayPaper,
+		GetCoins,
+		GetPaper,
+		Sell
 	};
 
 	static unique_ptr<Command> createCommand(CommandType commandType) {
@@ -22,6 +28,13 @@ public:
 				return make_unique<PlayCoinsCommand>();
 			case PlayPaper:
 				return make_unique<PlayPaperCommand>();
+			case GetCoins:
+				return make_unique<GetCoinsCommand>();
+			case GetPaper:
+				return make_unique<GetPaperCommand>();
+			case Sell:
+				return make_unique<SellCommand>();
+
 		}
 	};
 };

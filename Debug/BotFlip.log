@@ -1,6 +1,7 @@
 ﻿  BotFlip.cpp
 C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(22,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(23,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  The contents of <filesystem> are available only with C++17 or later.
 C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(24,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(25,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(26,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
@@ -8,11 +9,12 @@ C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(27,10): warning C4067: unexpecte
 C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(28,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(29,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(30,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(31,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\ianfr\source\repos\BotFlip\Command.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\ianfr\source\repos\BotFlip\Command.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\ianfr\source\repos\BotFlip\Command.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(31,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(32,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\ianfr\source\repos\BotFlip\HelpCommand.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
@@ -65,44 +67,106 @@ C:\Users\ianfr\source\repos\BotFlip\PlayPaperCommand.cpp(5): message : see decla
 C:\Users\ianfr\source\repos\BotFlip\PlayPaperCommand.cpp(36,11): error C2039: 'getConfig': is not a member of 'PlayPaperCommand'
 C:\Users\ianfr\source\repos\BotFlip\PlayPaperCommand.cpp(5): message : see declaration of 'PlayPaperCommand'
 C:\Users\ianfr\source\repos\BotFlip\PlayPaperCommand.cpp(46,4): error C3861: 'e': identifier not found
-C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(20,1): error C2440: 'return': cannot convert from 'std::unique_ptr<HelpCommand,std::default_delete<HelpCommand>>' to 'std::unique_ptr<Command,std::default_delete<Command>>'
-C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(20,5): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(22,1): error C2440: 'return': cannot convert from 'std::unique_ptr<PlayCoinsCommand,std::default_delete<PlayCoinsCommand>>' to 'std::unique_ptr<Command,std::default_delete<Command>>'
-C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(22,5): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(24,1): error C2440: 'return': cannot convert from 'std::unique_ptr<PlayPaperCommand,std::default_delete<PlayPaperCommand>>' to 'std::unique_ptr<Command,std::default_delete<Command>>'
-C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(24,5): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(194,75): warning C4566: character represented by universal-character-name '\u0201' cannot be represented in the current code page (1252)
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\GetCoinsCommand.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\GetCoinsCommand.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\GetCoinsCommand.cpp(7,1): error C2504: 'Command': base class undefined
+C:\Users\ianfr\source\repos\BotFlip\GetCoinsCommand.cpp(13,9): error C3668: 'GetCoinsCommand::description': method with override specifier 'override' did not override any base class methods
+C:\Users\ianfr\source\repos\BotFlip\GetCoinsCommand.cpp(18,9): error C3668: 'GetCoinsCommand::name': method with override specifier 'override' did not override any base class methods
+C:\Users\ianfr\source\repos\BotFlip\GetCoinsCommand.cpp(26,7): error C3668: 'GetCoinsCommand::run': method with override specifier 'override' did not override any base class methods
+C:\Users\ianfr\source\repos\BotFlip\GetCoinsCommand.cpp(31,1): error C2027: use of undefined type 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\GetCoinsCommand.cpp(36,4): error C3861: 'e': identifier not found
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\GetPaperCommand.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\GetPaperCommand.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\GetPaperCommand.cpp(7,1): error C2504: 'Command': base class undefined
+C:\Users\ianfr\source\repos\BotFlip\GetPaperCommand.cpp(13,9): error C3668: 'GetPaperCommand::description': method with override specifier 'override' did not override any base class methods
+C:\Users\ianfr\source\repos\BotFlip\GetPaperCommand.cpp(18,9): error C3668: 'GetPaperCommand::name': method with override specifier 'override' did not override any base class methods
+C:\Users\ianfr\source\repos\BotFlip\GetPaperCommand.cpp(26,7): error C3668: 'GetPaperCommand::run': method with override specifier 'override' did not override any base class methods
+C:\Users\ianfr\source\repos\BotFlip\GetPaperCommand.cpp(31,1): error C2027: use of undefined type 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\GetPaperCommand.cpp(36,4): error C3861: 'e': identifier not found
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(7,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(5,1): error C2504: 'Command': base class undefined
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(10,9): error C3668: 'SellCommand::description': method with override specifier 'override' did not override any base class methods
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(15,9): error C3668: 'SellCommand::name': method with override specifier 'override' did not override any base class methods
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(20,7): error C3668: 'SellCommand::run': method with override specifier 'override' did not override any base class methods
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(24,14): error C2039: 'getConfig': is not a member of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(4): message : see declaration of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(35,18): error C2039: 'getConfig': is not a member of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(4): message : see declaration of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(38,15): error C2039: 'getConfig': is not a member of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(4): message : see declaration of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(38,46): error C2039: 'getConfig': is not a member of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(4): message : see declaration of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(46,12): error C2039: 'getConfig': is not a member of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(4): message : see declaration of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(46,39): error C2039: 'getConfig': is not a member of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(4): message : see declaration of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(46,66): error C2039: 'getConfig': is not a member of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(4): message : see declaration of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(47,12): error C2039: 'getConfig': is not a member of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(4): message : see declaration of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(47,39): error C2039: 'getConfig': is not a member of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(4): message : see declaration of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(47,67): error C2039: 'getConfig': is not a member of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(4): message : see declaration of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(53,4): error C3861: 'e': identifier not found
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(26,1): error C2440: 'return': cannot convert from 'std::unique_ptr<HelpCommand,std::default_delete<HelpCommand>>' to 'std::unique_ptr<Command,std::default_delete<Command>>'
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(26,5): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(28,1): error C2440: 'return': cannot convert from 'std::unique_ptr<PlayCoinsCommand,std::default_delete<PlayCoinsCommand>>' to 'std::unique_ptr<Command,std::default_delete<Command>>'
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(28,5): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(30,1): error C2440: 'return': cannot convert from 'std::unique_ptr<PlayPaperCommand,std::default_delete<PlayPaperCommand>>' to 'std::unique_ptr<Command,std::default_delete<Command>>'
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(30,5): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(32,1): error C2440: 'return': cannot convert from 'std::unique_ptr<GetCoinsCommand,std::default_delete<GetCoinsCommand>>' to 'std::unique_ptr<Command,std::default_delete<Command>>'
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(32,5): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(34,1): error C2440: 'return': cannot convert from 'std::unique_ptr<GetPaperCommand,std::default_delete<GetPaperCommand>>' to 'std::unique_ptr<Command,std::default_delete<Command>>'
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(34,5): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(36,1): error C2440: 'return': cannot convert from 'std::unique_ptr<SellCommand,std::default_delete<SellCommand>>' to 'std::unique_ptr<Command,std::default_delete<Command>>'
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(36,5): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(151,75): warning C4566: character represented by universal-character-name '\u0201' cannot be represented in the current code page (1252)
 C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(76,19): error C2027: use of undefined type 'BotFlipConfig'
 C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(95,1): error C2027: use of undefined type 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(114,1): error C2027: use of undefined type 'BotFlipConfig'
 C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(104,1): error C2027: use of undefined type 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(115,1): error C2027: use of undefined type 'BotFlipConfig'
 C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(112,1): error C2027: use of undefined type 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(152,24): warning C4838: conversion from 'int' to 'char' requires a narrowing conversion
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(154,1): warning C4305: 'initializing': truncation from 'int' to 'char'
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(152,24): warning C4309: 'initializing': truncation of constant value
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(262,1): error C2027: use of undefined type 'BotFlipConfig'
 C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(126,1): error C2027: use of undefined type 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(402,1): error C2027: use of undefined type 'BotFlipConfig'
 C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(134,1): error C2027: use of undefined type 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(416,1): error C2027: use of undefined type 'BotFlipConfig'
 C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(135,1): error C2027: use of undefined type 'BotFlipConfig'
-C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(157,1): error C2027: use of undefined type 'BotFlipConfig'
-C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(158,1): error C2027: use of undefined type 'BotFlipConfig'
-C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(195,24): warning C4838: conversion from 'int' to 'char' requires a narrowing conversion
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(197,1): warning C4305: 'initializing': truncation from 'int' to 'char'
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(195,24): warning C4309: 'initializing': truncation of constant value
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(305,1): error C2027: use of undefined type 'BotFlipConfig'
-C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(445,1): error C2027: use of undefined type 'BotFlipConfig'
-C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(459,1): error C2027: use of undefined type 'BotFlipConfig'
-C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(625,9): error C2027: use of undefined type 'Command'
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(578,16): error C2039: 'filesystem': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\fstream(26): message : see declaration of 'std'
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(578,1): error C2065: 'filesystem': undeclared identifier
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(587,9): error C2027: use of undefined type 'Command'
 C:\Users\ianfr\source\repos\BotFlip\Command.cpp(8): message : see declaration of 'Command'
-C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(625,11): error C2039: 'run': is not a member of 'std::unique_ptr<Command,std::default_delete<Command>>'
-C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(17): message : see declaration of 'std::unique_ptr<Command,std::default_delete<Command>>'
+C:\Users\ianfr\source\repos\BotFlip\BotFlip.cpp(587,11): error C2039: 'run': is not a member of 'std::unique_ptr<Command,std::default_delete<Command>>'
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(23): message : see declaration of 'std::unique_ptr<Command,std::default_delete<Command>>'
+  BotFlipConfig.cpp
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
   Command.cpp
 C:\Users\ianfr\source\repos\BotFlip\Command.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\ianfr\source\repos\BotFlip\Command.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
@@ -156,10 +220,103 @@ C:\Users\ianfr\source\repos\BotFlip\PlayPaperCommand.cpp(5): message : see decla
 C:\Users\ianfr\source\repos\BotFlip\PlayPaperCommand.cpp(36,11): error C2039: 'getConfig': is not a member of 'PlayPaperCommand'
 C:\Users\ianfr\source\repos\BotFlip\PlayPaperCommand.cpp(5): message : see declaration of 'PlayPaperCommand'
 C:\Users\ianfr\source\repos\BotFlip\PlayPaperCommand.cpp(46,4): error C3861: 'e': identifier not found
-C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(22,1): error C2440: 'return': cannot convert from 'std::unique_ptr<PlayCoinsCommand,std::default_delete<PlayCoinsCommand>>' to 'std::unique_ptr<Command,std::default_delete<Command>>'
-C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(22,5): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(24,1): error C2440: 'return': cannot convert from 'std::unique_ptr<PlayPaperCommand,std::default_delete<PlayPaperCommand>>' to 'std::unique_ptr<Command,std::default_delete<Command>>'
-C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(24,5): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\GetCoinsCommand.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\GetCoinsCommand.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\GetCoinsCommand.cpp(7,1): error C2504: 'Command': base class undefined
+C:\Users\ianfr\source\repos\BotFlip\GetCoinsCommand.cpp(13,9): error C3668: 'GetCoinsCommand::description': method with override specifier 'override' did not override any base class methods
+C:\Users\ianfr\source\repos\BotFlip\GetCoinsCommand.cpp(18,9): error C3668: 'GetCoinsCommand::name': method with override specifier 'override' did not override any base class methods
+C:\Users\ianfr\source\repos\BotFlip\GetCoinsCommand.cpp(26,7): error C3668: 'GetCoinsCommand::run': method with override specifier 'override' did not override any base class methods
+C:\Users\ianfr\source\repos\BotFlip\GetCoinsCommand.cpp(31,1): error C2027: use of undefined type 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\GetCoinsCommand.cpp(36,4): error C3861: 'e': identifier not found
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\GetPaperCommand.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\GetPaperCommand.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\GetPaperCommand.cpp(7,1): error C2504: 'Command': base class undefined
+C:\Users\ianfr\source\repos\BotFlip\GetPaperCommand.cpp(13,9): error C3668: 'GetPaperCommand::description': method with override specifier 'override' did not override any base class methods
+C:\Users\ianfr\source\repos\BotFlip\GetPaperCommand.cpp(18,9): error C3668: 'GetPaperCommand::name': method with override specifier 'override' did not override any base class methods
+C:\Users\ianfr\source\repos\BotFlip\GetPaperCommand.cpp(26,7): error C3668: 'GetPaperCommand::run': method with override specifier 'override' did not override any base class methods
+C:\Users\ianfr\source\repos\BotFlip\GetPaperCommand.cpp(31,1): error C2027: use of undefined type 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\GetPaperCommand.cpp(36,4): error C3861: 'e': identifier not found
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(7,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(5,1): error C2504: 'Command': base class undefined
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(10,9): error C3668: 'SellCommand::description': method with override specifier 'override' did not override any base class methods
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(15,9): error C3668: 'SellCommand::name': method with override specifier 'override' did not override any base class methods
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(20,7): error C3668: 'SellCommand::run': method with override specifier 'override' did not override any base class methods
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(24,14): error C2039: 'getConfig': is not a member of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(4): message : see declaration of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(35,18): error C2039: 'getConfig': is not a member of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(4): message : see declaration of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(38,15): error C2039: 'getConfig': is not a member of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(4): message : see declaration of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(38,46): error C2039: 'getConfig': is not a member of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(4): message : see declaration of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(46,12): error C2039: 'getConfig': is not a member of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(4): message : see declaration of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(46,39): error C2039: 'getConfig': is not a member of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(4): message : see declaration of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(46,66): error C2039: 'getConfig': is not a member of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(4): message : see declaration of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(47,12): error C2039: 'getConfig': is not a member of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(4): message : see declaration of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(47,39): error C2039: 'getConfig': is not a member of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(4): message : see declaration of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(47,67): error C2039: 'getConfig': is not a member of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(4): message : see declaration of 'SellCommand'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(53,4): error C3861: 'e': identifier not found
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(28,1): error C2440: 'return': cannot convert from 'std::unique_ptr<PlayCoinsCommand,std::default_delete<PlayCoinsCommand>>' to 'std::unique_ptr<Command,std::default_delete<Command>>'
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(28,5): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(30,1): error C2440: 'return': cannot convert from 'std::unique_ptr<PlayPaperCommand,std::default_delete<PlayPaperCommand>>' to 'std::unique_ptr<Command,std::default_delete<Command>>'
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(30,5): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(32,1): error C2440: 'return': cannot convert from 'std::unique_ptr<GetCoinsCommand,std::default_delete<GetCoinsCommand>>' to 'std::unique_ptr<Command,std::default_delete<Command>>'
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(32,5): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(34,1): error C2440: 'return': cannot convert from 'std::unique_ptr<GetPaperCommand,std::default_delete<GetPaperCommand>>' to 'std::unique_ptr<Command,std::default_delete<Command>>'
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(34,5): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(36,1): error C2440: 'return': cannot convert from 'std::unique_ptr<SellCommand,std::default_delete<SellCommand>>' to 'std::unique_ptr<Command,std::default_delete<Command>>'
+C:\Users\ianfr\source\repos\BotFlip\CommandFactory.cpp(36,5): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  GetCoinsCommand.cpp
+C:\Users\ianfr\source\repos\BotFlip\GetCoinsCommand.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\GetCoinsCommand.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(6,1): error C2011: 'BotFlipConfig': 'class' type redefinition
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\GetCoinsCommand.cpp(31,1): error C2027: use of undefined type 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
+  GetPaperCommand.cpp
+C:\Users\ianfr\source\repos\BotFlip\GetPaperCommand.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\GetPaperCommand.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(6,1): error C2011: 'BotFlipConfig': 'class' type redefinition
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\GetPaperCommand.cpp(31,1): error C2027: use of undefined type 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
   HelpCommand.cpp
 C:\Users\ianfr\source\repos\BotFlip\HelpCommand.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\ianfr\source\repos\BotFlip\Command.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
@@ -188,4 +345,26 @@ C:\Users\ianfr\source\repos\BotFlip\Command.cpp(1,10): warning C4067: unexpected
 C:\Users\ianfr\source\repos\BotFlip\Command.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\ianfr\source\repos\BotFlip\Command.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  SellCommand.cpp
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(6,1): error C2011: 'BotFlipConfig': 'class' type redefinition
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\Command.cpp(21,24): error C2027: use of undefined type 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(24,1): error C2027: use of undefined type 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(35,1): error C2027: use of undefined type 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(38,1): error C2027: use of undefined type 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(46,1): error C2027: use of undefined type 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\SellCommand.cpp(47,1): error C2027: use of undefined type 'BotFlipConfig'
+C:\Users\ianfr\source\repos\BotFlip\BotFlipConfig.cpp(5): message : see declaration of 'BotFlipConfig'
   Generating Code...

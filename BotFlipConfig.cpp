@@ -9,6 +9,7 @@ public:
 	int paper = 1;
 	int rNum = 0;
 	int uNum = 0;
+	int numToSell = 0;
 
 	// Version
 	string ver = "1.4.0b";
