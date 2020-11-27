@@ -39,7 +39,7 @@ while (TRUE)
 
 [v1.4.0](https://github.com/Totoro700/BotFlip/releases/tag/1.4.0 "Version 1.4.0") - First recorded version
 
-To find a speific release, click on the branch list, click tags, and search up version numbers
+To find a specific release, click on the branch list, click tags, and search up version numbers
 
 Here is some examples of the versions:
 
