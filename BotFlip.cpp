@@ -27,6 +27,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #include <math.h>;
 #include <Windows.h>;
 #include <shellapi.h>;
+#include "Command.cpp";
+#include "CommandFactory.cpp";
 
 // Std
 using namespace std;
@@ -46,12 +48,8 @@ public:
 	// Create variables
 
 	// Int
-	int coins = 0;
-	int paper = 1;
 	int num = 0;
 	int toCalcu = 0;
-	int rNum = 0;
-	int uNum = 0;
 	int a = 0;
 	int b = 0;
 	int numToSell = 0;
@@ -75,9 +73,7 @@ public:
 	string tP;
 	string toWrite;
 
-	// Version
-	string ver = "1.4.0b";
-
+	BotFlipConfig* c = new BotFlipConfig();
 
 	// Clear screen
 	void clear()
@@ -91,263 +87,10 @@ public:
 		cout << "Something went wrong! Please try again\n";
 	}
 
-	// Help
-	void help()
-	{
-		try
-		{
-			// Help
-			cout << "--------------------HELP--------------------" << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "[command name]" << std::setw(helpDescriptionWidth) << "[description]"                                                    << std::setw(helpIdWidth) << "[id]"    << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "help"           << std::setw(helpDescriptionWidth) << "Displays this help message"                                       << std::setw(helpIdWidth) << "hlp"     << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "playCoins"      << std::setw(helpDescriptionWidth) << "Play for a chance to get coins!"                                  << std::setw(helpIdWidth) << "plyCns"  << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "playPaper"      << std::setw(helpDescriptionWidth) << "Play for a chance to get paper!"                                  << std::setw(helpIdWidth) << "plyPpr"  << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "coins"          << std::setw(helpDescriptionWidth) << "See all the coins you have"                                       << std::setw(helpIdWidth) << "cns"     << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "paper"          << std::setw(helpDescriptionWidth) << "See all the paper you have"                                       << std::setw(helpIdWidth) << "ppr"     << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "sell"           << std::setw(helpDescriptionWidth) << "Sell the paper you have"                                          << std::setw(helpIdWidth) << "sll"     << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "steal"          << std::setw(helpDescriptionWidth) << "Steal"                                                            << std::setw(helpIdWidth) << "stl"     << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "givemecoffee"   << std::setw(helpDescriptionWidth) << "Gives you coffee"                                                 << std::setw(helpIdWidth) << "gvmcff"  << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "cls"            << std::setw(helpDescriptionWidth) << "Clears all the text on the screen"                                << std::setw(helpIdWidth) << "clear"   << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "spam"           << std::setw(helpDescriptionWidth) << "Program spams"                                                    << std::setw(helpIdWidth) << "spm"     << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "exit"           << std::setw(helpDescriptionWidth) << "Exits this program"                                               << std::setw(helpIdWidth) << "ext"     << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "add"            << std::setw(helpDescriptionWidth) << "Adds two numbers"                                                 << std::setw(helpIdWidth) << "add"     << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "subtract"       << std::setw(helpDescriptionWidth) << "Sutracts two numbers"                                             << std::setw(helpIdWidth) << "sbtrct"  << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "multiply"       << std::setw(helpDescriptionWidth) << "Multiplies two numbers"                                           << std::setw(helpIdWidth) << "mul"     << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "divide"         << std::setw(helpDescriptionWidth) << "Divides two numbers"                                              << std::setw(helpIdWidth) << "div"     << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "modulus"        << std::setw(helpDescriptionWidth) << "Calculates the modules (mod) of two numbers"                      << std::setw(helpIdWidth) << "mod"     << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "sine"           << std::setw(helpDescriptionWidth) << "Calculates sine of on a number"                                   << std::setw(helpIdWidth) << "sin"     << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "cosine"         << std::setw(helpDescriptionWidth) << "Calculates cosine on a number"                                    << std::setw(helpIdWidth) << "cos"     << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "tangent"        << std::setw(helpDescriptionWidth) << "Calculates tangent on a number"                                   << std::setw(helpIdWidth) << "tan"     << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "arcsin"         << std::setw(helpDescriptionWidth) << "Calculates arcsin on a number"                                    << std::setw(helpIdWidth) << "asin"    << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "arccos"         << std::setw(helpDescriptionWidth) << "Calculates arccos on a number"                                    << std::setw(helpIdWidth) << "acos"    << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "arctan"         << std::setw(helpDescriptionWidth) << "Calculates arctan on a number"                                    << std::setw(helpIdWidth) << "atan"    << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "ver"            << std::setw(helpDescriptionWidth) << "Displays the version"                                             << std::setw(helpIdWidth) << "ver"     << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "spcfcVer"       << std::setw(helpDescriptionWidth) << "Displays the specific version"                                    << std::setw(helpIdWidth) << "sVer"    << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "repository"     << std::setw(helpDescriptionWidth) << "Opens BotFlip's repository"                                       << std::setw(helpIdWidth) << "repo"    << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "report"         << std::setw(helpDescriptionWidth) << "Opens issue panel where you can report an issue"                  << std::setw(helpIdWidth) << "bug"     << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "releases"       << std::setw(helpDescriptionWidth) << "Opens all the releases"                                           << std::setw(helpIdWidth) << "release" << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "debug"          << std::setw(helpDescriptionWidth) << "Basic debug"                                                      << std::setw(helpIdWidth) << "debug"   << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "fwrite"         << std::setw(helpDescriptionWidth) << "File write, opens a file a writes some text into it"                                                     << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "fowrite"        << std::setw(helpDescriptionWidth) << "File overwrite, opens a file and overwrites some text into it"                                           << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "fclear"         << std::setw(helpDescriptionWidth) << "File clear, opens a file and clears all the contents in the file"                                        << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "color-green"    << std::setw(helpDescriptionWidth) << "Sets the text color to green (default)"                                                                  << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "color-red"      << std::setw(helpDescriptionWidth) << "Sets the text color to red"                                                                              << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "color-white"    << std::setw(helpDescriptionWidth) << "Sets the text color to white"                                                                            << std::endl;
-			cout << std::left << std::setw(helpCommandWidth) << "color-blue"     << std::setw(helpDescriptionWidth) << "Sets the text color to blue (not recommended)"                                                           << std::endl;
-			cout << std::endl;
-			cout << "-------------------------------------------------" << std::endl;
-		}
-		catch (...)
-		{
-			e();
-		}
-	}
-
-	// Play coins
-	void playCoins()
-	{
-		// Generate random number
-		int rNum = rand() % 9 + 1;
-
-		// Get user's random number
-		cout << "Guess the random number (1 to 10)\n";
-		cin >> uNum;
-
-		// Check if correct
-		if (uNum == rNum)
-		{
-			// Correct
-			cout << "Correct!\n";
-			coins++;
-		}
-		else
-		{
-			// Incorrect
-			cout << "Incorrect!\n";
-		}
-	}
-
-	// Play Paper
-	void playPaper()
-	{
-		// Generate random number from 1 to 100
-		int rNum = rand() % 100 + 1;
-
-		// Get user's random number
-		cout << "Guess the random number (1 to 100)\n";
-		cin >> uNum;
-
-		// Check if correct
-		if (uNum == rNum)
-		{
-			// Correct
-			cout << "Correct!\n";
-			paper++;
-		}
-		else
-		{
-			// Incorrect
-			cout << "Incorrect!\n";
-		}
-	}
-
-	// Coins
-	void getCoins()
-	{
-		// Get coins
-		cout << "Coins: ";
-		cout << coins;
-		cout << "\n";
-	}
-
-	// Paper
-	void getPaper()
-	{
-		// Get paper
-		cout << "Paper: ";
-		cout << paper;
-		cout << "\n";
-	}
-
-	// Sell
-	void sell()
-	{
-		// Sell paper
-		if (paper == 0)
-		{
-			// No paper to sell
-			cout << "You don't even have paper to sell!\n";
-		}
-		else
-		{
-			cout << "For every paper you sell, you get 10 coins\n";
-			cout << "How many papers do you want to sell?\n";
-
-			// Get num to sell
-			cin >> numToSell;
-
-			// Check
-			if (numToSell > paper)
-			{
-				// Not enough paper
-				cout << "You don't have enough paper!\n";
-			}
-			else
-			{
-				// Sell
-				paper = paper - numToSell;
-				coins = coins + (numToSell * 10);
-			}
-		}
-	}
-
 	// Empty
 	void empty()
 	{
 		cout << "";
-	}
-
-	// Hack
-	void hack()
-	{
-		// Hack			
-		cout << "Password: ";
-
-		// Get input
-		cin >> uPass;
-		if (uPass == "BotFlip123-C++")
-		{
-			// Correct
-			coins = coins + 9999999999;
-			paper = paper + 9999999999;
-		}
-		else
-		{
-			// Incorrect
-			cout << "Incorrect!";
-		}
-	}
-
-	// Steal
-	void steal()
-	{
-		// Steal
-		cout << "No.\n";
-	}
-
-	// Spam
-	void spam()
-	{
-		// Reset
-		a = 0;
-		b = 0;
-
-		// Spam
-		cout << "Spamming 100000 charecters\n";
-
-		// Wait 1 second
-		Sleep(1000);
-		try
-		{
-			// Set charecters to spam
-			char chars[115] = {
-
-			'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
-			'`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', '[', ']', ';', ',', '.', '/', '~', '!', '@', '#', '$', '%', '^',
-			'&', '*', '(', ')', '_', '+', '{', '}', '|', ':', '<', '>', '?', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D',
-			'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '§', '\u0201', '\u00a1', '\u00a2', '\u00a3', '\u00a4', '\u00a5',
-			'\u00a6', '\u00a7', '', 'é', 'Ó', 'Ñ', '¼', 'Ì', 'ó', 'ÿ', 'ÿ', 'ƒ', 'Ä', 'Ê', 'ô', 'å', 'ÿ',
-
-			};
-
-			// Start spamming
-			while (a == 0)
-			{
-
-				// Check if spammed 100000 charecters already
-				if (b < 100001)
-				{
-					// Spam
-
-					//Get char
-					char letter = chars[rand() % 116 + 1];
-
-					// Print char
-					cout << letter;
-
-					// Add one to var b
-					b++;
-				}
-				else
-				{
-					// Break
-					cout << "\n";
-					a = 1;
-					break;
-				}
-			}
-		}
-		catch (...)
-		{
-			e();
-		}
-	}
-
-	void coffee()
-	{
-		// Coffee
-		cout << "No.\n";
-	}
-
-	// Add
-	void add()
-	{
-		cout << "Number one to add?\n";
-		cin >> numOne;
-		cout << "Number two to add?\n";
-		cin >> numTwo;
-		cout << numOne + numTwo;
-		cout << "\n";
 	}
 
 	// Subtract
@@ -406,7 +149,7 @@ public:
 	{
 		// Specific version
 		cout << "C++ Bot. Version ";
-		cout << ver;
+		cout << c->ver;
 		cout << "\n";
 	}
 
@@ -542,6 +285,15 @@ public:
 		cout << "\n";
 	}
 
+	// Title
+	void getTitle()
+	{
+		cout << "BotFlip\n";
+		cout << c->ver;
+		cout << "\n";
+		cout << "----------------------------------------------------------------------------------\n";
+	}
+
 	// Debug
 	void debug()
 	{
@@ -551,7 +303,7 @@ public:
 		Sleep(2000);
 
 		// Check if it is a beta version
-		if (ver.find("b"))
+		if (c->ver.find("b"))
 		{
 			// May have an issue
 			cout << "This program may have an issue, do you want to report it?\nY = Yes | N = No\n";
@@ -649,7 +401,7 @@ public:
 		cout << "To over write?\n";
 
 		// Input
-		cin >> toWrite;
+		getline(cin, toWrite);
 
 		// Open file and truncate content
 		text.open("text.txt", ios::trunc);
@@ -730,8 +482,16 @@ public:
 		system("Color 01");
 		cout << "Successfully changed the text color to blue!\n";
 	}
+
+
 };
 
+
+void runCommand(CommandFactory::CommandType commandType)
+{
+	unique_ptr<Command> command = CommandFactory::createCommand(commandType);
+	command->run();
+}
 
 
 // Main
@@ -749,11 +509,7 @@ int main()
 	// Clear
 	b.clear();
 
-	// Begining title
-	cout << "BotFlip\n";
-	cout << b.ver;
-	cout << "\n";
-	cout << "----------------------------------------------------------------------------------\n";
+	b.getTitle();
 
 	// Wait 1 second
 	Sleep(1000);
@@ -775,7 +531,7 @@ int main()
 		{
 		case str2int("help"):
 		case str2int("hlp"):
-			b.help();
+			runCommand(CommandFactory::Help);
 			break;
 		case str2int("Hi"):
 		case str2int("hi"):
@@ -791,35 +547,35 @@ int main()
 		case str2int("plyCns"):
 		case str2int("play_coins"):
 		case str2int("ply_cns"):
-			b.playCoins();
+			runCommand(CommandFactory::PlayCoins);
 			break;
 		case str2int("playPaper"):
 		case str2int("plyPpr"):
 		case str2int("play_paper"):
 		case str2int("ply_ppr"):
-			b.playPaper();
+			runCommand(CommandFactory::PlayPaper);
 			break;
 		case str2int("coins"):
 		case str2int("cns"):
-			b.getCoins();
+			runCommand(CommandFactory::GetCoins);
 			break;
 		case str2int("paper"):
 		case str2int("ppr"):
-			b.getPaper();
+			runCommand(CommandFactory::GetPaper);
 			break;
 		case str2int("steal"):
-			b.steal();
+			runCommand(CommandFactory::Steal);
 			break;
 		case str2int("sell"):
 		case str2int("sll"):
-			b.sell();
+			runCommand(CommandFactory::Sell);
 			break;
 		case str2int("givemecoffee"):
 		case str2int("gvmcff"):
-			b.coffee();
+			runCommand(CommandFactory::Coffee);
 			break;
 		case str2int("hack"):
-			b.hack();
+			runCommand(CommandFactory::Hack);
 		case str2int("cls"):
 		case str2int("CLS"):
 		case str2int("Cls"):
@@ -827,10 +583,10 @@ int main()
 			b.clear();
 			break;
 		case str2int("spam"):
-			b.spam();
+			runCommand(CommandFactory::Spam);
 			break;
 		case str2int("add"):
-			b.add();
+			runCommand(CommandFactory::Add);
 			break;
 		case str2int("subtract"):
 		case str2int("sub"):
