@@ -44,7 +44,7 @@ To find a speific release, click on the branch list, click tags, and search up v
 Here is some examples of the versions:
 
 
-1.4.0 - Version 1.3.1
+1.4.0 - Version 1.4.0
 
 1.4.0-beta - Version 1.4.0 beta
 
