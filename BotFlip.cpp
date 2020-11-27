@@ -93,17 +93,6 @@ public:
 		cout << "";
 	}
 
-	// Add
-	void add()
-	{
-		cout << "Number one to add?\n";
-		cin >> numOne;
-		cout << "Number two to add?\n";
-		cin >> numTwo;
-		cout << numOne + numTwo;
-		cout << "\n";
-	}
-
 	// Subtract
 	void subtract()
 	{

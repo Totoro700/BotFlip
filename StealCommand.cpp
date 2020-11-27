@@ -1,6 +1,5 @@
 #include "BotFlipConfig.cpp";
 #include "Command.cpp";
-#include <Windows.h>;
 
 class StealCommand : public Command
 {

@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AddCommand.cpp" />
     <ClCompile Include="BotFlip.cpp" />
     <ClCompile Include="BotFlipConfig.cpp" />
     <ClCompile Include="CoffeeCommand.cpp" />
