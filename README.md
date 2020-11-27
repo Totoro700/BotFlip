@@ -52,6 +52,12 @@ Here is some examples of the versions:
 
 ---
 
+## Which version?
+
+It is best to take [Version 1.0.0-beta](https://github.com/Totoro700/BotFlip/releases/tag/v1.4.0-beta) for now, the later versions are very buggy
+
+---
+
 ## Languages
 
 [C++](https://github.com/Totoro700/BotFlip/search?l=c%2B%2B) - Mainly for the main script, [BotFlip.cpp](https://github.com/Totoro700/BotFlip/blob/main/BotFlip.cpp)
