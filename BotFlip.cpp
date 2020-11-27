@@ -93,22 +93,6 @@ public:
 		cout << "";
 	}
 
-	// Version
-	void version()
-	{
-		// Version
-		cout << "C++ Bot. Version 1.4\n";
-	}
-
-	// Specific version
-	void spcfcVer()
-	{
-		// Specific version
-		cout << "C++ Bot. Version ";
-		cout << c->ver;
-		cout << "\n";
-	}
-
 	//                              Trigonometric functions
 	// Sine
 	void sine()
@@ -541,10 +525,10 @@ int main()
 			runCommand(CommandFactory::Modulus);
 			break;
 		case str2int("ver"):
-			b.version();
+			runCommand(CommandFactory::Ver);
 		case str2int("spcfcVer"):
 		case str2int("sVer"):
-			b.spcfcVer();
+			runCommand(CommandFactory::Spcfcver);
 			break;
 		case str2int("sine"):
 		case str2int("sin"):

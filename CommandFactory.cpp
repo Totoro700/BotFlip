@@ -13,7 +13,9 @@
 #include "SubtractCommand.cpp";
 #include "MultiplyCommand.cpp";
 #include "DivideCommand.cpp";
-#include "ModulusCommand.cpp";
+#include "ModCommand.cpp";
+#include "VerCommand.cpp";
+#include "Spcfcver.cpp";
 
 // Std
 using namespace std;
@@ -36,7 +38,9 @@ public:
 		Subtract,
 		Multiply,
 		Divide,
-		Modulus
+		Modulus,
+		Ver,
+		Spcfcver
 	};
 
 	static unique_ptr<Command> createCommand(CommandType commandType) {
@@ -70,7 +74,11 @@ public:
 			case Divide:
 				return make_unique<DivideCommand>();
 			case Modulus:
-				return make_unique<ModulusCommand>();
+				return make_unique<ModCommand>();
+			case Ver:
+				return make_unique<VersionCommand>();
+			case Spcfcver:
+				return make_unique<SpcfcverCommand>();
 		}
 	};
 };
