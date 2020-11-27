@@ -93,17 +93,6 @@ public:
 		cout << "";
 	}
 
-	// Spam
-	void spam()
-	{
-		
-		}
-		catch (...)
-		{
-			e();
-		}
-	}
-
 	// Add
 	void add()
 	{
@@ -585,7 +574,7 @@ int main()
 			b.clear();
 			break;
 		case str2int("spam"):
-			b.spam();
+			runCommand(CommandFactory::Spam);
 			break;
 		case str2int("add"):
 			b.add();
