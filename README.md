@@ -19,17 +19,17 @@ while (TRUE)
 
 ## Jump to:
 
-[Releases meta](https://github.com/Totoro700/BotFlip/blob/main/README.md#release-meta)
+[Releases meta](#release-meta)
 
-[Languages](https://github.com/Totoro700/BotFlip/blob/main/README.md#languages)
+[Languages](#languages)
 
-[Branches](https://github.com/Totoro700/BotFlip/blob/main/README.md#branches)
+[Branches](#branches)
 
-[Images](https://github.com/Totoro700/BotFlip/blob/main/README.md#images)
+[Images](#images)
 
-[License](https://github.com/Totoro700/BotFlip/blob/main/README.md#license)
+[License](#license)
 
-[Install](https://github.com/Totoro700/BotFlip/blob/main/README.md#install)
+[Install](#install)
 
 ---
 
@@ -87,18 +87,15 @@ Read [here](https://github.com/Totoro700/BotFlip/blob/main/HELP.md "Help markdow
 
 ## Install
 
-Read [here](https://github.com/Totoro700/BotFlip/blob/main/INSTALL.md)
+Read [here](https://github.com/Totoro700/BotFlip/blob/main/INSTALL.md "Install markdown file")
 
 ---
 
 ## License
 
-Read [here](https://github.com/Totoro700/BotFlip/blob/main/LICENSE.md)
+Read [here](https://github.com/Totoro700/BotFlip/blob/main/LICENSE.md "License file")
 
 ---
 
-
-<br />
-<br />
 
 Jump to top ↑ : [jump](#)
