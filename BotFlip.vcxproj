@@ -159,6 +159,7 @@
     <ClCompile Include="SpcfcVer.cpp" />
     <ClCompile Include="StealCommand.cpp" />
     <ClCompile Include="SubtractCommand.cpp" />
+    <ClCompile Include="TanCommand.cpp" />
     <ClCompile Include="VerCommand.cpp" />
   </ItemGroup>
   <ItemGroup>

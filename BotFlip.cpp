@@ -515,11 +515,11 @@ int main()
 			break;
 		case str2int("cosine"):
 		case str2int("cos"):
-			b.cosine();
+			runCommand(CommandFactory::Cos);
 			break;
 		case str2int("tangent"):
 		case str2int("tan"):
-			b.tangent();
+			runCommand(CommandFactory::Tan);
 			break;
 		case str2int("echo"):
 			b.echo();
