@@ -280,16 +280,21 @@ public:
 		ofstream text;
 
 		// Ask
-		cout << "To Write?\n";
+		cout << "When finished writing type CLOSE on a new line. What do you want to write?\n";
 
 		// Get input
 		cin >> toWrite;
 
-		// Open file
+		// Open file and append new content
 		text.open("text.txt", ios_base::app);
 
-		// Update file
-		text << toWrite;
+		while (getline(cin, toWrite)) {
+			if (toWrite == "CLOSE") {
+				break;
+			}
+			// Update file
+			text << toWrite << std::endl;
+		}
 
 		// Close file
 		text.close();
@@ -396,7 +401,7 @@ void runCommand(CommandFactory::CommandType commandType)
 // Main
 int main()
 {
-
+	// Set color to green
 	system("Color 0A");
 
 	// Include class as b
@@ -408,6 +413,7 @@ int main()
 	// Clear
 	b.clear();
 
+	// Print title
 	b.getTitle();
 
 	// Wait 1 second
