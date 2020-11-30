@@ -93,10 +93,7 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\Downloads\Chrome Downloads\favicon.ico">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="icon.ico">
+    <Image Include="..\..\..\..\..\icon.ico">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

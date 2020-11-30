@@ -9,7 +9,7 @@ void install()
 }
 ```
 
-Windows only, sorry Mac users, I don't have executable file for Mac, but you can run the [C++ script](https://github.com/Totoro700/BotFlip/blob/main/BotFlip.cpp)
+Windows only, sorry Mac users or Linux, I don't have executable file for Mac or Linux, but you can run the [C++ script](https://github.com/Totoro700/BotFlip/blob/main/BotFlip.cpp)
 
 ---
 
@@ -39,6 +39,6 @@ Windows only, sorry Mac users, I don't have executable file for Mac, but you can
 
 
 ```cpp
-cout << "Finished installing BotFLip!\n";
+cout << "Finished installing BotFlip!\n";
 ```
 ---
