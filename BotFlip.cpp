@@ -93,18 +93,6 @@ public:
 		cout << "";
 	}
 
-	//                              Trigonometric functions
-
-	// Cosine
-	void cosine()
-	{
-		// Cosine
-		cout << "Number?\n";
-		cin >> numOne;
-		cout << cos(numOne);
-		cout << "\n";
-	}
-
 	// Tangent
 	void tangent()
 	{

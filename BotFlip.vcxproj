@@ -145,6 +145,7 @@
     <ClCompile Include="CoffeeCommand.cpp" />
     <ClCompile Include="Command.cpp" />
     <ClCompile Include="CommandFactory.cpp" />
+    <ClCompile Include="CosCommand.cpp" />
     <ClCompile Include="DivideCommand.cpp" />
     <ClCompile Include="GetCoins.cpp" />
     <ClCompile Include="HackCommand.cpp" />

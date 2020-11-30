@@ -17,6 +17,7 @@
 #include "VerCommand.cpp";
 #include "Spcfcver.cpp";
 #include "SinCommand.cpp";
+#include "CosCommand.cpp";
 
 // Std
 using namespace std;
@@ -42,7 +43,8 @@ public:
 		Modulus,
 		Ver,
 		Spcfcver,
-		Sin
+		Sin,
+		Cos
 	};
 
 	// Commands
@@ -84,6 +86,8 @@ public:
 				return make_unique<SpcfcverCommand>();
 			case Sin:
 				return make_unique<SinCommand>();
+			case Cos:
+				return make_unique<CosCommand>();
 		}
 	};
 };
